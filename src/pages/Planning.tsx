@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { Layout } from '@/components/Layout';
+import { colors } from '../styles/designSystem';
 
 export const Planning = () => {
   const [activeDay, setActiveDay] = useState('vendredi');
@@ -10,66 +12,80 @@ export const Planning = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[#1269cb]/10 py-16">
-      <div className="container mx-auto px-4 py-8">
-        <div className="relative mb-8">
-          <h1 className="text-2xl md:text-5xl font-bold text-[#4323FC] text-center relative z-10 uppercase tracking-wider">
-            Programme du Festival
-          </h1>
-       
+    <Layout>
+      <div className="relative min-h-screen">
+        {/* Top Section with Background Image */}
+        <div className="absolute top-0 left-0 right-0 h-[50vh] overflow-hidden">
+          <img 
+            src="/cover_Reggaeton_Festival.png"
+            alt="Festival Background"
+            className="w-full h-full object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-transparent"></div>
+          <div className="absolute inset-0"></div>
         </div>
 
-        {/* Day Selection Tabs */}
-        <div className="flex justify-center mb-8">
-          <div className="inline-flex rounded-lg bg-white backdrop-blur-sm p-2">
-            {days.map((day) => (
-              <button
-                key={day.id}
-                onClick={() => setActiveDay(day.id)}
-                className={`px-6 py-3 rounded-lg text-sm font-medium transition-all ${
-                  activeDay === day.id ? 'text-white bg-[#4323FC]'
-                    : ' text-black'
-                }`}
-              >
-                {day.label}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        <div className="max-w-3xl mx-auto">
-          <div className={`transition-all ${activeDay === 'vendredi' ? 'block' : 'hidden'}`}>
-            <div className="bg-white/5 backdrop-blur-sm p-4 rounded-2xl">
-              <img
-                src="/planning_vendredi.png"
-                alt="Programme Vendredi"
-                className="w-full rounded-xl shadow-xl"
-              />
+        {/* Content Section */}
+        <div className="relative pt-32 min-h-screen bg-gradient-to-b from-transparent to-[#f5c78e]">
+          <div className="container mx-auto px-4">
+            <div className="relative mb-8">
+             
             </div>
-          </div>
 
-          <div className={`transition-all ${activeDay === 'samedi' ? 'block' : 'hidden'}`}>
-            <div className="bg-white/5 backdrop-blur-sm p-4 rounded-2xl">
-              <img
-                src="/planning_samedi.png"
-                alt="Programme Samedi"
-                className="w-full rounded-xl shadow-xl"
-              />
+            {/* Day Selection Tabs */}
+            <div className="flex justify-center mb-8">
+              <div className="inline-flex rounded-lg bg-white/90 backdrop-blur-sm p-2 shadow-lg">
+                {days.map((day) => (
+                  <button
+                    key={day.id}
+                    onClick={() => setActiveDay(day.id)}
+                    className={`px-6 py-3 rounded-lg text-sm font-medium transition-all ${
+                      activeDay === day.id ? `text-white bg-[${colors.text.primary}]`
+                        : 'text-black hover:bg-white/50'
+                    }`}
+                  >
+                    {day.label}
+                  </button>
+                ))}
+              </div>
             </div>
-          </div>
 
-          <div className={`transition-all ${activeDay === 'dimanche' ? 'block' : 'hidden'}`}>
-            <div className="bg-white/5 backdrop-blur-sm p-4 rounded-2xl">
-              <img
-                src="/planning_dimanche.png"
-                alt="Programme Dimanche"
-                className="w-full rounded-xl shadow-xl"
-              />
+            {/* Planning Content */}
+            <div className="max-w-3xl mx-auto pb-16">
+              <div className={`transition-all ${activeDay === 'vendredi' ? 'block' : 'hidden'}`}>
+                <div className="bg-white/90 backdrop-blur-sm p-4 rounded-2xl shadow-xl">
+                  <img
+                    src="/planning_vendredi.png"
+                    alt="Programme Vendredi"
+                    className="w-full rounded-xl"
+                  />
+                </div>
+              </div>
+
+              <div className={`transition-all ${activeDay === 'samedi' ? 'block' : 'hidden'}`}>
+                <div className="bg-white/90 backdrop-blur-sm p-4 rounded-2xl shadow-xl">
+                  <img
+                    src="/planning_samedi.png"
+                    alt="Programme Samedi"
+                    className="w-full rounded-xl"
+                  />
+                </div>
+              </div>
+
+              <div className={`transition-all ${activeDay === 'dimanche' ? 'block' : 'hidden'}`}>
+                <div className="bg-white/90 backdrop-blur-sm p-4 rounded-2xl shadow-xl">
+                  <img
+                    src="/planning_dimanche.png"
+                    alt="Programme Dimanche"
+                    className="w-full rounded-xl"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </Layout>
   );
 };
 

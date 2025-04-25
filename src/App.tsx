@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Info from './pages/Info';
 import { Planning } from './pages/Planning';
 import Contact from './pages/Contact';
+import { colors } from './styles/designSystem';
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -84,9 +85,9 @@ const Navigation = () => {
               href="https://my.weezevent.com/paris-reggaeton-festival"
               target="_blank"
               rel="noopener noreferrer"
-              className="ml-4 mr-2 px-6 py-2 bg-white text-[#4323FC] font-bold rounded-lg hover:bg-amber-300 transition-colors"
+              className="ml-4 mr-2 px-4 py-1.5 bg-white text-[#4323FC] font-bold rounded-lg hover:bg-amber-300 transition-colors"
             >
-              Billeterie
+              Billetterie
             </a>
           
           </div>
@@ -113,8 +114,8 @@ const Navigation = () => {
               to="/"
               className={`px-4 py-2 rounded-lg transition-all ${
                 isActive('/') 
-                  ? 'text-amber-400 font-semibold' 
-                  : 'text-white hover:text-amber-400'
+                  ? 'text-white font-semibold' 
+                  : 'text-white hover:text-white'
               }`}
               onClick={() => setIsMenuOpen(false)}
             >
@@ -125,7 +126,7 @@ const Navigation = () => {
               className={`px-4 py-2 rounded-lg transition-all ${
                 isActive('/info') 
                   ? 'text-amber-400 font-semibold' 
-                  : 'text-white hover:text-amber-400'
+                  : 'text-white hover:text-white'
               }`}
               onClick={() => setIsMenuOpen(false)}
             >
@@ -135,8 +136,8 @@ const Navigation = () => {
               to="/planning"
               className={`px-4 py-2 rounded-lg transition-all ${
                 isActive('/planning') 
-                  ? 'text-amber-400 font-semibold' 
-                  : 'text-white hover:text-amber-400'
+                  ? 'text-white font-semibold' 
+                  : 'text-white hover:text-white'
               }`}
               onClick={() => setIsMenuOpen(false)}
             >
@@ -146,8 +147,8 @@ const Navigation = () => {
               to="/contact"
               className={`px-4 py-2 rounded-lg transition-all ${
                 isActive('/contact') 
-                  ? 'text-amber-400 font-semibold' 
-                  : 'text-white hover:text-amber-400'
+                  ? 'text-white font-semibold' 
+                  : 'text-white hover:text-white'
               }`}
               onClick={() => setIsMenuOpen(false)}
             >
@@ -157,10 +158,10 @@ const Navigation = () => {
               href="https://my.weezevent.com/paris-reggaeton-festival"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-4 py-2 bg-amber-400 text-[#4323FC] font-bold rounded-lg hover:bg-amber-300 transition-colors"
+              className="px-4 py-1.5 bg-white text-[#4323FC] font-bold rounded-lg transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              Billeterie
+              Billetterie
             </a>
           </div>
         </div>
@@ -172,7 +173,7 @@ const Navigation = () => {
 const App = () => {
   return (
     <Router>
-      <div className="min-h-screen">
+      <div className={`min-h-screen bg-[${colors.background.primary}]`}>
         <Navigation />
         <main>
           <Routes>
