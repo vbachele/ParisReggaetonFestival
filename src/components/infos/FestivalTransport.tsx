@@ -1,6 +1,4 @@
-import React from 'react';
 import { Building2, Car } from 'lucide-react';
-import { Card, CardContent } from "@/components/ui/card";
 
 const FestivalTransport = () => (
   <>

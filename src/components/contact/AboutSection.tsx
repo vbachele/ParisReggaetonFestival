@@ -40,15 +40,16 @@ const aboutCards: AboutCard[] = [
   },
   {
     cardClass: "border-none relative overflow-hidden group rounded-xl bg-purple-800",
-    title: "Localisation",
+    title: "Atelier Chorégraphique 2025",
     items: [
-      { title: "Paris", description: "Centre ville" },
-      { title: "Ile-De-France", description: "Multiples lieux" },
-      { title: "Événements", description: "Salles partenaires" }
+      { title: "REGGAETON BOOSTER", description: "50h de danse en groupe pour préparer un SHOW spectaculaire" },
+      { title: "Préparation Intensive", description: "Sessions de 3h par semaine pour une progression rapide" },
+      { title: "Show sur Scène", description: "L'opportunité de briller et d'être la star de la scène" },
+      { title: "Places Limitées", description: "Une aventure humaine et artistique unique" }
     ],
     img: "/contact/raggaeton_tour.png",
-    imgAlt: "Paris",
-    className: "w-full h-full rounded-lg shadow-lsg "
+    imgAlt: "Reggaeton Booster",
+    className: "w-full h-full rounded-lg shadow-lg object-cover"
   }
 ];
 
@@ -63,11 +64,11 @@ const AboutSection = () => {
       >
         À propos de l'association
       </motion.h1>
-      <motion.p 
+      <motion.p
         initial={{ x: -100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.7, delay: 0.2 }}
-        className="text-xl mb-16 font-body font-title"
+        className="text-xl mb-16"
       >
         Créée en 2012, nous apportons la joie de la danse à Paris et en Ile-De-France
       </motion.p>
@@ -93,9 +94,9 @@ const AboutSection = () => {
                           key={index}
                           className="transform hover:translate-x-2 transition-transform duration-300"
                         >
-                          <div className="font-semibold font-body">{item.title}</div>
+                          <div className="font-semibold">{item.title}</div>
                           {item.description && (
-                            <div className="text-sm font-body">{item.description}</div>
+                            <div className="text-sm">{item.description}</div>
                           )}
                         </li>
                       ))}

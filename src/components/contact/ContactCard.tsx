@@ -6,7 +6,7 @@ const ContactCard = () => {
     <Card className="max-w-2xl mx-auto bg-gradient-to-br from-text-primary/90 to-text-primary">
       <CardContent className="py-8">
         <div className="text-center mb-8">
-          <h2 className="text-3xl font-bold text-white mb-2 font-title">L'association Ambiance Zumba Reggaeton</h2>
+          <h2 className="text-3xl font-bold text-white mb-2 font-title"> Association Ambiance Zumba Reggaeton</h2>
         </div>
 
         {/* Team Section */}
