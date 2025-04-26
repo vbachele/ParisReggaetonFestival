@@ -1159,6 +1159,7 @@ __metadata:
     clsx: ^2.1.1
     embla-carousel-autoplay: ^8.6.0
     embla-carousel-react: ^8.6.0
+    framer-motion: ^12.9.2
     lucide-react: ^0.503.0
     postcss: ^8.4.21
     react: ^18.2.0
@@ -1194,6 +1195,28 @@ __metadata:
   version: 4.3.7
   resolution: "fraction.js@npm:4.3.7"
   checksum: e1553ae3f08e3ba0e8c06e43a3ab20b319966dfb7ddb96fd9b5d0ee11a66571af7f993229c88ebbb0d4a816eb813a24ed48207b140d442a8f76f33763b8d1f3f
+  languageName: node
+  linkType: hard
+
+"framer-motion@npm:^12.9.2":
+  version: 12.9.2
+  resolution: "framer-motion@npm:12.9.2"
+  dependencies:
+    motion-dom: ^12.9.1
+    motion-utils: ^12.8.3
+    tslib: ^2.4.0
+  peerDependencies:
+    "@emotion/is-prop-valid": "*"
+    react: ^18.0.0 || ^19.0.0
+    react-dom: ^18.0.0 || ^19.0.0
+  peerDependenciesMeta:
+    "@emotion/is-prop-valid":
+      optional: true
+    react:
+      optional: true
+    react-dom:
+      optional: true
+  checksum: d727674f64a4b0735aac368107b76d54b3bc5e1becce4c80eb7a1be29b9bc214396ae67564b7c18a46111efa96bd54d240d7923310e741b51abd3e644e0da968
   languageName: node
   linkType: hard
 
@@ -1642,6 +1665,22 @@ __metadata:
   bin:
     mkdirp: dist/cjs/src/bin.js
   checksum: 972deb188e8fb55547f1e58d66bd6b4a3623bf0c7137802582602d73e6480c1c2268dcbafbfb1be466e00cc7e56ac514d7fd9334b7cf33e3e2ab547c16f83a8d
+  languageName: node
+  linkType: hard
+
+"motion-dom@npm:^12.9.1":
+  version: 12.9.1
+  resolution: "motion-dom@npm:12.9.1"
+  dependencies:
+    motion-utils: ^12.8.3
+  checksum: 080a17af7195a04ec52701aab2a8b4b0ca475b7425f4c1ee091536cf699d6e7173cbfe3b1ddc8fb8738d284e3b402b2205fd8f2b7a385c255780c56c359979dd
+  languageName: node
+  linkType: hard
+
+"motion-utils@npm:^12.8.3":
+  version: 12.8.3
+  resolution: "motion-utils@npm:12.8.3"
+  checksum: 7eec8df83bcbeac3b0dcbb33af41c0dc6b31e0f96a2fdba5685c087bac5257ce674212d65263d325c7e7b4ddcea3706b1225c51e97c97cfc4ef8d42190d0223d
   languageName: node
   linkType: hard
 
@@ -2336,6 +2375,13 @@ __metadata:
   version: 0.1.13
   resolution: "ts-interface-checker@npm:0.1.13"
   checksum: 20c29189c2dd6067a8775e07823ddf8d59a33e2ffc47a1bd59a5cb28bb0121a2969a816d5e77eda2ed85b18171aa5d1c4005a6b88ae8499ec7cc49f78571cb5e
+  languageName: node
+  linkType: hard
+
+"tslib@npm:^2.4.0":
+  version: 2.8.1
+  resolution: "tslib@npm:2.8.1"
+  checksum: e4aba30e632b8c8902b47587fd13345e2827fa639e7c3121074d5ee0880723282411a8838f830b55100cbe4517672f84a2472667d355b81e8af165a55dc6203a
   languageName: node
   linkType: hard
 

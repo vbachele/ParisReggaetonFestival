@@ -1,10 +1,8 @@
-import React from 'react';
 import { Mail, Facebook, Instagram } from 'lucide-react';
-import { colors } from '../styles/designSystem';
 
 export const Footer = () => {
   return (
-    <footer className={`w-full bg-[${colors.text.primary}] text-white mt-auto`}>
+    <footer className={`w-full bg-text-primary text-white mt-auto`}>
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="text-sm text-white/80">

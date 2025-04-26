@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Layout } from '@/components/Layout';
-import { colors } from '../styles/designSystem';
 
 export const Planning = () => {
   const [activeDay, setActiveDay] = useState('vendredi');
@@ -26,7 +25,7 @@ export const Planning = () => {
         </div>
 
         {/* Content Section */}
-        <div className="relative pt-32 min-h-screen bg-gradient-to-b from-transparent to-[#f5c78e]">
+        <div className="relative pt-32 min-h-screen bg-gradient-to-b from-transparent to-background-primary">
           <div className="container mx-auto px-4">
             <div className="relative mb-8">
              
@@ -40,7 +39,7 @@ export const Planning = () => {
                     key={day.id}
                     onClick={() => setActiveDay(day.id)}
                     className={`px-6 py-3 rounded-lg text-sm font-medium transition-all ${
-                      activeDay === day.id ? `text-white bg-[${colors.text.primary}]`
+                      activeDay === day.id ? `text-white bg-text-primary`
                         : 'text-black hover:bg-white/50'
                     }`}
                   >
