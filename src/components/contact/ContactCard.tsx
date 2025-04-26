@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 const ContactCard = () => {
   return (
     <Card className="max-w-2xl mx-auto bg-gradient-to-br from-text-primary/90 to-text-primary">
-      <CardContent className="p-8">
+      <CardContent className="py-8">
         <div className="text-center mb-8">
           <h2 className="text-3xl font-bold text-white mb-2 font-title">L'association Ambiance Zumba Reggaeton</h2>
         </div>
@@ -26,7 +26,6 @@ const ContactCard = () => {
                 <div>
                   <h4 className="text-lg font-bold text-white font-title">PHILIPPE</h4>
                   <p className="text-white/80 text-sm font-body">Président</p>
-                  <p className="text-white/60 text-xs font-body">Partie administrative et logistique</p>
                 </div>
               </div>
             </div>
@@ -44,7 +43,6 @@ const ContactCard = () => {
                 <div>
                   <h4 className="text-lg font-bold text-white font-title">FARAH</h4>
                   <p className="text-white/80 text-sm font-body">Directrice Artistique</p>
-                  <p className="text-white/60 text-xs font-body">Partie artistique et communication</p>
                 </div>
               </div>
             </div>
@@ -61,7 +59,7 @@ const ContactCard = () => {
               <div>
                 <p className="text-white/60 text-sm font-body">Téléphone</p>
                 <a href="tel:0670423211" className="text-white hover:text-white/80 transition-colors">
-                  06 70 42 32 11
+                  +33 6 70 42 32 11
                 </a>
               </div>
             </div>
@@ -107,19 +105,6 @@ const ContactCard = () => {
           </div>
         </div>
 
-        <div className="mt-8 pt-8 border-t border-white/10">
-          <div className="flex items-center space-x-4">
-            <div className="bg-white/10 p-3 rounded-full">
-              <Facebook className="h-6 w-6 text-white" />
-            </div>
-            <div>
-              <p className="text-white/60 text-sm font-body">Facebook</p>
-              <a href="#" className="text-white hover:text-white/80 transition-colors">
-                Farah AlwaysWanna-Dance
-              </a>
-            </div>
-          </div>
-        </div>
       </CardContent>
     </Card>
   );

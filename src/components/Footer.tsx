@@ -8,10 +8,10 @@ export const Footer = () => {
           <div className="text-sm text-white/80">
             © 2024 Paris Reggaeton Festival. Tous droits réservés.
           </div>
-          
+
           <div className="flex items-center gap-6">
-            <a 
-              href="mailto:ambiance-zumba@hotmail.fr" 
+            <a
+              href="mailto:ambiance-zumba@hotmail.fr"
               className="text-white/80 hover:text-white transition-colors"
             >
               <Mail className="h-5 w-5" />
@@ -23,7 +23,7 @@ export const Footer = () => {
               <Facebook className="h-5 w-5" />
             </a>
             <a 
-              href="#" 
+              href="#"
               className="text-white/80 hover:text-white transition-colors"
             >
               <Instagram className="h-5 w-5" />

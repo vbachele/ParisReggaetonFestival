@@ -42,9 +42,6 @@ const Info = () => {
               <motion.h1 {...titleAnim} className="text-4xl md:text-5xl font-bold mb-4 font-title">
                 Informations Pratiques
               </motion.h1>
-              <motion.p {...subtitleAnim} className="text-xl md:text-2xl text-white/90 font-body">
-                Tout ce que vous devez savoir pour profiter du festival
-              </motion.p>
             </div>
           </div>
         </div>
@@ -59,9 +56,6 @@ const Info = () => {
             <motion.h1 {...titleAnim} className="text-3xl font-bold mb-2">
               Informations Pratiques
             </motion.h1>
-            <motion.p {...subtitleAnim} className="text-lg text-white/90">
-              Tout ce que vous devez savoir
-            </motion.p>
           </div>
         </div>
       </div>

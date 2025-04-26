@@ -2,14 +2,13 @@ import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carouse
 import Autoplay from 'embla-carousel-autoplay';
 import { motion } from 'framer-motion';
 
-// Types
+
 interface Artist {
   name: string;
   location: string;
   image: string;
 }
 
-// Artist data
 const artists: Artist[] = [
   { name: "Alicia", location: "Toulouse", image: "/dancers/alicia.png" },
   { name: "Melissa", location: "Paris", image: "/dancers/melissa.png" },
@@ -70,7 +69,7 @@ const ArtistList = () => {
                   </div>
                   <div className="absolute bottom-0 left-0 right-0 h-1/4 bg-text-primary">
                     <div className="p-4 md:p-6 text-center">
-                      <p className="text-white/90 mb-1 text-base md:text-lg">
+                      <p className="text-white/90 mb-1 text-base md:text-lg font-body">
                         {artist.location}
                       </p>
                       <h3 className="text-white text-xl md:text-2xl font-bold">{artist.name}</h3>
