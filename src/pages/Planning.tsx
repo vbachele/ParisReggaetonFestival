@@ -52,7 +52,7 @@ export const Planning = () => {
             {/* Planning Content */}
             <div className="max-w-3xl mx-auto pb-16">
               <div className={`transition-all ${activeDay === 'vendredi' ? 'block' : 'hidden'}`}>
-                <div className="bg-white/90 backdrop-blur-sm p-4 rounded-2xl shadow-xl">
+                <div className=" p-4 rounded-2xl shadow-xl">
                   <img
                     src="/planning_vendredi.png"
                     alt="Programme Vendredi"
@@ -62,7 +62,7 @@ export const Planning = () => {
               </div>
 
               <div className={`transition-all ${activeDay === 'samedi' ? 'block' : 'hidden'}`}>
-                <div className="bg-white/90 backdrop-blur-sm p-4 rounded-2xl shadow-xl">
+                <div className=" p-4 rounded-2xl shadow-xl">
                   <img
                     src="/planning_samedi.png"
                     alt="Programme Samedi"
@@ -72,7 +72,7 @@ export const Planning = () => {
               </div>
 
               <div className={`transition-all ${activeDay === 'dimanche' ? 'block' : 'hidden'}`}>
-                <div className="bg-white/90 backdrop-blur-sm p-4 rounded-2xl shadow-xl">
+                <div className=" p-4 rounded-2xl shadow-xl">
                   <img
                     src="/planning_dimanche.png"
                     alt="Programme Dimanche"

@@ -4,7 +4,6 @@ import { Building2, Car } from 'lucide-react';
 const FestivalTransport = () => (
   <>
     <h2 className="text-2xl md:text-3xl font-bold mb-6 text-text-primary">Transport et Hébergement</h2>
-    {/* À pied & Hébergement */}
     <div className="bg-gray-50 p-6 rounded-lg mb-6">
       <h3 className="text-xl font-bold mb-4">À pied & Hébergement</h3>
       <div className="space-y-4">

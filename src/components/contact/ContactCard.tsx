@@ -1,0 +1,128 @@
+import { Phone, Mail, Facebook, Instagram } from 'lucide-react';
+import { Card, CardContent } from "@/components/ui/card";
+
+const ContactCard = () => {
+  return (
+    <Card className="max-w-2xl mx-auto bg-gradient-to-br from-text-primary/90 to-text-primary">
+      <CardContent className="p-8">
+        <div className="text-center mb-8">
+          <h2 className="text-3xl font-bold text-white mb-2">L'association Ambiance Zumba Reggaeton</h2>
+        </div>
+
+        {/* Team Section */}
+        <div className="mb-8">
+          <h3 className="text-xl font-bold text-white mb-4 text-center">Notre Équipe</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Philippe */}
+            <div className="bg-white/5 rounded-xl p-4">
+              <div className="flex items-center space-x-4">
+                <div className="w-16 h-16 rounded-full overflow-hidden bg-white/10">
+                  <img 
+                    src="/contact/farah.jpg" 
+                    alt="Philippe" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div>
+                  <h4 className="text-lg font-bold text-white">PHILIPPE</h4>
+                  <p className="text-white/80 text-sm">Président</p>
+                  <p className="text-white/60 text-xs">Partie administrative et logistique</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Farah */}
+            <div className="bg-white/5 rounded-xl p-4">
+              <div className="flex items-center space-x-4">
+                <div className="w-16 h-16 rounded-full overflow-hidden bg-white/10">
+                  <img 
+                    src="/contact/farah.jpg" 
+                    alt="Farah" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div>
+                  <h4 className="text-lg font-bold text-white">FARAH</h4>
+                  <p className="text-white/80 text-sm">Directrice Artistique</p>
+                  <p className="text-white/60 text-xs">Partie artistique et communication</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* Contact Information */}
+          <div className="space-y-6">
+            <div className="flex items-center space-x-4">
+              <div className="bg-white/10 p-3 rounded-full">
+                <Phone className="h-6 w-6 text-white" />
+              </div>
+              <div>
+                <p className="text-white/60 text-sm">Téléphone</p>
+                <a href="tel:0670423211" className="text-white hover:text-white/80 transition-colors">
+                  06 70 42 32 11
+                </a>
+              </div>
+            </div>
+
+            <div className="flex items-center space-x-4">
+              <div className="bg-white/10 p-3 rounded-full">
+                <Mail className="h-6 w-6 text-white" />
+              </div>
+              <div>
+                <p className="text-white/60 text-sm">Email</p>
+                <a href="mailto:ambiance-zumba@hotmail.fr" className="text-white hover:text-white/80 transition-colors">
+                  ambiance-zumba@hotmail.fr
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Social Media */}
+          <div className="space-y-6">
+            <div className="flex items-center space-x-4">
+              <div className="bg-white/10 p-3 rounded-full">
+                <Facebook className="h-6 w-6 text-white" />
+              </div>
+              <div>
+                <p className="text-white/60 text-sm">Facebook</p>
+                <a href="#" className="text-white hover:text-white/80 transition-colors">
+                  Ambiance Zumba Reggaeton
+                </a>
+              </div>
+            </div>
+
+            <div className="flex items-center space-x-4">
+              <div className="bg-white/10 p-3 rounded-full">
+                <Instagram className="h-6 w-6 text-white" />
+              </div>
+              <div>
+                <p className="text-white/60 text-sm">Instagram</p>
+                <a href="#" className="text-white hover:text-white/80 transition-colors">
+                  @farah_alwayswannadance
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-8 pt-8 border-t border-white/10">
+          <div className="flex items-center space-x-4">
+            <div className="bg-white/10 p-3 rounded-full">
+              <Facebook className="h-6 w-6 text-white" />
+            </div>
+            <div>
+              <p className="text-white/60 text-sm">Facebook</p>
+              <a href="#" className="text-white hover:text-white/80 transition-colors">
+                Farah AlwaysWanna-Dance
+              </a>
+            </div>
+          </div>
+        </div>
+      </CardContent>
+    </Card>
+  );
+};
+
+export default ContactCard; 

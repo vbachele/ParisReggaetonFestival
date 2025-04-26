@@ -5,22 +5,25 @@ import FestivalAddress from '@/components/infos/FestivalAddress';
 import FestivalTransport from '@/components/infos/FestivalTransport';
 import FestivalRestauration from '@/components/infos/FestivalRestauration';
 
-const titleAnim = {
+const baseAnim = {
   initial: { x: -100, opacity: 0 },
   animate: { x: 0, opacity: 1 },
-  transition: { duration: 0.7, delay: 0.1 }
+  transition: { duration: 0.7 }
+};
+
+const titleAnim = {
+  ...baseAnim,
+  transition: { ...baseAnim.transition, delay: 0.1 }
 };
 
 const subtitleAnim = {
-  initial: { x: -100, opacity: 0 },
-  animate: { x: 0, opacity: 1 },
-  transition: { duration: 0.7, delay: 0.25 }
+  ...baseAnim,
+  transition: { ...baseAnim.transition, delay: 0.25 }
 };
 
 const cardAnim = {
-  initial: { x: 100, opacity: 0 },
-  animate: { x: 0, opacity: 1 },
-  transition: { duration: 0.7 }
+  ...baseAnim,
+  transition: { ...baseAnim.transition }
 };
 
 const Info = () => {
