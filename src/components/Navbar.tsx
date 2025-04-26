@@ -14,22 +14,22 @@ export const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="text-2xl font-bold text-text-primary">
+          <Link to="/" className="text-2xl font-bold text-text-primary font-title">
             PRF
           </Link>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8">
-            <Link to="/" className="text-text-primary hover:text-white transition-colors">
+            <Link to="/" className="text-text-primary hover:text-white transition-colors font-title">
               Accueil
             </Link>
-            <Link to="/planning" className="text-text-primary hover:text-white transition-colors">
+            <Link to="/planning" className="text-text-primary hover:text-white transition-colors font-title">
               Planning
             </Link>
-            <Link to="/info" className="text-text-primary hover:text-white transition-colors">
+            <Link to="/info" className="text-text-primary hover:text-white transition-colors font-title">
               Infos
             </Link>
-            <Link to="/contact" className="text-text-primary hover:text-white transition-colors">
+            <Link to="/contact" className="text-text-primary hover:text-white transition-colors font-title">
               Contact
             </Link>
           </div>
@@ -49,28 +49,28 @@ export const Navbar = () => {
             <div className="px-2 pt-2 pb-3 space-y-1">
               <Link
                 to="/"
-                className="block px-3 py-2 text-text-primary hover:text-white transition-colors"
+                className="block px-3 py-2 text-text-primary hover:text-white transition-colors font-title"
                 onClick={toggleMenu}
               >
                 Accueil
               </Link>
               <Link
                 to="/planning"
-                className="block px-3 py-2 text-text-primary hover:text-white transition-colors"
+                className="block px-3 py-2 text-text-primary hover:text-white transition-colors font-title"
                 onClick={toggleMenu}
               >
                 Planning
               </Link>
               <Link
                 to="/info"
-                className="block px-3 py-2 text-text-primary hover:text-white transition-colors"
+                className="block px-3 py-2 text-text-primary hover:text-white transition-colors font-title"
                 onClick={toggleMenu}
               >
                 Infos
               </Link>
               <Link
                 to="/contact"
-                className="block px-3 py-2 text-text-primary hover:text-white transition-colors"
+                className="block px-3 py-2 text-text-primary hover:text-white transition-colors font-title"
                 onClick={toggleMenu}
               >
                 Contact

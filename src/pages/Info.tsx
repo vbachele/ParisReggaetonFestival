@@ -39,10 +39,10 @@ const Info = () => {
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/50"></div>
           <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
             <div className="container mx-auto">
-              <motion.h1 {...titleAnim} className="text-4xl md:text-5xl font-bold mb-4">
+              <motion.h1 {...titleAnim} className="text-4xl md:text-5xl font-bold mb-4 font-title">
                 Informations Pratiques
               </motion.h1>
-              <motion.p {...subtitleAnim} className="text-xl md:text-2xl text-white/90">
+              <motion.p {...subtitleAnim} className="text-xl md:text-2xl text-white/90 font-body">
                 Tout ce que vous devez savoir pour profiter du festival
               </motion.p>
             </div>

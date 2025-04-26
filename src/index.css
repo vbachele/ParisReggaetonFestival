@@ -8,6 +8,8 @@ html, body {
   
 }
 
-html, body, * {
-  font-family: 'Righteous', ui-sans-serif, system-ui, sans-serif !important;
-}
+  html, body {
+    @apply font-body;
+    @apply font-title;
+  }
+

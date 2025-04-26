@@ -60,7 +60,7 @@ const FeatureCards = () => {
                   <h3 className="text-white text-2xl md:text-3xl font-bold">
                     {card.title}
                   </h3>
-                  <p className="text-white/90 text-md md:text-lg max-w-md">
+                  <p className="text-white/90 text-md md:text-lg max-w-md font-body">
                     {card.text}
                   </p>
                   <div className="space-y-2">

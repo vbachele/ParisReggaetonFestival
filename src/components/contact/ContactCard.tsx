@@ -6,12 +6,12 @@ const ContactCard = () => {
     <Card className="max-w-2xl mx-auto bg-gradient-to-br from-text-primary/90 to-text-primary">
       <CardContent className="p-8">
         <div className="text-center mb-8">
-          <h2 className="text-3xl font-bold text-white mb-2">L'association Ambiance Zumba Reggaeton</h2>
+          <h2 className="text-3xl font-bold text-white mb-2 font-title">L'association Ambiance Zumba Reggaeton</h2>
         </div>
 
         {/* Team Section */}
         <div className="mb-8">
-          <h3 className="text-xl font-bold text-white mb-4 text-center">Notre Équipe</h3>
+          <h3 className="text-xl font-bold text-white mb-4 text-center font-title">Notre Équipe</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Philippe */}
             <div className="bg-white/5 rounded-xl p-4">
@@ -24,9 +24,9 @@ const ContactCard = () => {
                   />
                 </div>
                 <div>
-                  <h4 className="text-lg font-bold text-white">PHILIPPE</h4>
-                  <p className="text-white/80 text-sm">Président</p>
-                  <p className="text-white/60 text-xs">Partie administrative et logistique</p>
+                  <h4 className="text-lg font-bold text-white font-title">PHILIPPE</h4>
+                  <p className="text-white/80 text-sm font-body">Président</p>
+                  <p className="text-white/60 text-xs font-body">Partie administrative et logistique</p>
                 </div>
               </div>
             </div>
@@ -42,9 +42,9 @@ const ContactCard = () => {
                   />
                 </div>
                 <div>
-                  <h4 className="text-lg font-bold text-white">FARAH</h4>
-                  <p className="text-white/80 text-sm">Directrice Artistique</p>
-                  <p className="text-white/60 text-xs">Partie artistique et communication</p>
+                  <h4 className="text-lg font-bold text-white font-title">FARAH</h4>
+                  <p className="text-white/80 text-sm font-body">Directrice Artistique</p>
+                  <p className="text-white/60 text-xs font-body">Partie artistique et communication</p>
                 </div>
               </div>
             </div>
@@ -59,7 +59,7 @@ const ContactCard = () => {
                 <Phone className="h-6 w-6 text-white" />
               </div>
               <div>
-                <p className="text-white/60 text-sm">Téléphone</p>
+                <p className="text-white/60 text-sm font-body">Téléphone</p>
                 <a href="tel:0670423211" className="text-white hover:text-white/80 transition-colors">
                   06 70 42 32 11
                 </a>
@@ -71,7 +71,7 @@ const ContactCard = () => {
                 <Mail className="h-6 w-6 text-white" />
               </div>
               <div>
-                <p className="text-white/60 text-sm">Email</p>
+                <p className="text-white/60 text-sm font-body">Email</p>
                 <a href="mailto:ambiance-zumba@hotmail.fr" className="text-white hover:text-white/80 transition-colors">
                   ambiance-zumba@hotmail.fr
                 </a>
@@ -86,7 +86,7 @@ const ContactCard = () => {
                 <Facebook className="h-6 w-6 text-white" />
               </div>
               <div>
-                <p className="text-white/60 text-sm">Facebook</p>
+                <p className="text-white/60 text-sm font-body">Facebook</p>
                 <a href="#" className="text-white hover:text-white/80 transition-colors">
                   Ambiance Zumba Reggaeton
                 </a>
@@ -98,7 +98,7 @@ const ContactCard = () => {
                 <Instagram className="h-6 w-6 text-white" />
               </div>
               <div>
-                <p className="text-white/60 text-sm">Instagram</p>
+                <p className="text-white/60 text-sm font-body">Instagram</p>
                 <a href="#" className="text-white hover:text-white/80 transition-colors">
                   @farah_alwayswannadance
                 </a>
@@ -113,7 +113,7 @@ const ContactCard = () => {
               <Facebook className="h-6 w-6 text-white" />
             </div>
             <div>
-              <p className="text-white/60 text-sm">Facebook</p>
+              <p className="text-white/60 text-sm font-body">Facebook</p>
               <a href="#" className="text-white hover:text-white/80 transition-colors">
                 Farah AlwaysWanna-Dance
               </a>

@@ -18,7 +18,7 @@ const HeroSection = () => {
         />
       </div>
 
-      <div className="absolute left-0 right-0 bottom-[18%] md:bottom-[12%] px-4 w-full">
+      <div className="absolute left-0 right-0 bottom-[24%] md:bottom-[12%] px-4 w-full">
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row md:gap-4 gap-2 justify-center items-center max-w-2xl mx-auto">
             <Link 

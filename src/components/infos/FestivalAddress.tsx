@@ -3,7 +3,7 @@ import { MapPin } from 'lucide-react';
 
 const FestivalAddress = () => (
   <>
-    <h2 className="text-2xl md:text-3xl font-bold mb-6 text-text-primary">Adresse du Festival</h2>
+    <h2 className="text-2xl md:text-3xl font-bold mb-6 text-text-primary font-title">Adresse du Festival</h2>
     <div className="aspect-video w-full rounded-lg mb-4 overflow-hidden">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2628.5441843491747!2d2.345082300000001!3d48.7481609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6769a65d8006f%3A0x1e8881e2141a341!2sSalle%20de%20r%C3%A9ception%20La%20Grange!5e0!3m2!1sfr!2sfr!4v1708977254435!5m2!1sfr!2sfr"

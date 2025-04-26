@@ -59,7 +59,7 @@ const AboutSection = () => {
         initial={{ x: -100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.7, delay: 0.1 }}
-        className="text-4xl font-bold mb-4 text-text-primary"
+        className="text-4xl font-bold mb-4 text-text-primary font-title"
       >
         À propos de l'association
       </motion.h1>
@@ -67,7 +67,7 @@ const AboutSection = () => {
         initial={{ x: -100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.7, delay: 0.2 }}
-        className="text-xl mb-16"
+        className="text-xl mb-16 font-body font-title"
       >
         Créée en 2012, nous apportons la joie de la danse à Paris et en Ile-De-France
       </motion.p>
@@ -84,7 +84,7 @@ const AboutSection = () => {
               <CardContent className="p-8">
                 <div className="flex justify-between items-center">
                   <div className="space-y-4 text-left flex-1">
-                    <h3 className="text-white text-2xl md:text-3xl font-bold">
+                    <h3 className="text-white text-2xl md:text-3xl font-bold font-title">
                       {card.title}
                     </h3>
                     <ul className="space-y-3 text-white/90">
@@ -93,9 +93,9 @@ const AboutSection = () => {
                           key={index}
                           className="transform hover:translate-x-2 transition-transform duration-300"
                         >
-                          <div className="font-semibold">{item.title}</div>
+                          <div className="font-semibold font-body">{item.title}</div>
                           {item.description && (
-                            <div className="text-sm">{item.description}</div>
+                            <div className="text-sm font-body">{item.description}</div>
                           )}
                         </li>
                       ))}
