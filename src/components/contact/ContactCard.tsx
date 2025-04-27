@@ -1,5 +1,6 @@
 import { Phone, Mail, Facebook, Instagram } from 'lucide-react';
 import { Card, CardContent } from "@/components/ui/card";
+import { links } from '@/config/links';
 
 const ContactCard = () => {
   return (
@@ -70,7 +71,7 @@ const ContactCard = () => {
               </div>
               <div>
                 <p className="text-white/60 text-sm font-body">Email</p>
-                <a href="mailto:ambiance-zumba@hotmail.fr" className="text-white hover:text-white/80 transition-colors">
+                <a href={links.social.email} className="text-white hover:text-white/80 transition-colors">
                   ambiance-zumba@hotmail.fr
                 </a>
               </div>
@@ -85,7 +86,7 @@ const ContactCard = () => {
               </div>
               <div>
                 <p className="text-white/60 text-sm font-body">Facebook</p>
-                <a href="#" className="text-white hover:text-white/80 transition-colors">
+                <a href={links.social.facebook} target="_blank" rel="noopener noreferrer" className="text-white hover:text-white/80 transition-colors">
                   Ambiance Zumba Reggaeton
                 </a>
               </div>
@@ -97,7 +98,7 @@ const ContactCard = () => {
               </div>
               <div>
                 <p className="text-white/60 text-sm font-body">Instagram</p>
-                <a href="#" className="text-white hover:text-white/80 transition-colors">
+                <a href={links.social.instagram} target="_blank" rel="noopener noreferrer" className="text-white hover:text-white/80 transition-colors">
                   @farah_alwayswannadance
                 </a>
               </div>

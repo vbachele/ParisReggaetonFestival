@@ -15,7 +15,7 @@ const config: Config = {
           goldDark: '#f0d4a3',
         },
         text: {
-          primary: '#4323FC',
+          primary: '#5324CD',
           secondary: '#000000',
         },
         background: {

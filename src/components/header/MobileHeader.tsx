@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Menu, XCircle } from 'lucide-react';
+import { links } from '@/config/links';
 
 export const MobileHeader = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -32,7 +33,6 @@ export const MobileHeader = () => {
 
   return (
     <div className="md:hidden">
-      {/* Header Bar: logo left, menu button right */}
       <div className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-4 py-4 w-full bg-text-primary backdrop-blur-m">
         <Link to="/" className="flex items-center gap-2">
           <img
@@ -52,7 +52,6 @@ export const MobileHeader = () => {
           )}
         </button>
       </div>
-      {/* Mobile Menu Overlay */}
       {isMenuOpen && (
         <motion.div
           key="mobile-menu"
@@ -62,7 +61,7 @@ export const MobileHeader = () => {
           exit="hidden"
           variants={containerVariants}
         >
-          {menuItems.map((item, idx) => (
+          {menuItems.map((item ) => (
             <motion.div
               key={item.to}
               variants={itemVariants}
@@ -83,15 +82,13 @@ export const MobileHeader = () => {
             variants={itemVariants}
             transition={{ duration: 0.4 }}
           >
-            <a
-              href="https://my.weezevent.com/paris-reggaeton-festival"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-4 py-4 text-2xl font-extrabold uppercase tracking-wide rounded-lg transition-all text-text-primary font-righteous bg-white "
+            <Link
+              to={links.internal.tickets}
+              className="px-4 py-4 text-2xl font-extrabold uppercase tracking-wide rounded-lg transition-all text-text-primary font-righteous bg-white"
               onClick={() => setIsMenuOpen(false)}
             >
               Billetterie
-            </a>
+            </Link>
           </motion.div>
         </motion.div>
       )}

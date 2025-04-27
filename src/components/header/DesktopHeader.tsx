@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { links } from '@/config/links';
 
 export const DesktopHeader = () => {
   const location = useLocation();
@@ -21,7 +22,12 @@ export const DesktopHeader = () => {
         <Link to="/info" className={`px-4 py-2 rounded-lg transition-all ${isActive('/info') ? 'text-white font-bold' : 'text-white font-semibold hover:text-[#9964FF]'}`}>Infos</Link>
         <Link to="/planning" className={`px-4 py-2 rounded-lg transition-all ${isActive('/planning') ? 'text-white font-bold' : 'text-white font-semibold hover:text-[#9964FF]'}`}>Planning</Link>
         <Link to="/contact" className={`px-4 py-2 rounded-lg transition-all ${isActive('/contact') ? 'text-white font-bold' : 'text-white font-semibold hover:text-[#9964FF]'}`}>Contact</Link>
-        <a href="https://my.weezevent.com/paris-reggaeton-festival" target="_blank" rel="noopener noreferrer" className="ml-4 mr-2 px-4 py-1.5 bg-white text-text-primary font-bold rounded-lg hover:bg-amber-300 transition-colors">Billetterie</a>
+        <Link 
+          to={links.internal.tickets} 
+          className="ml-4 mr-2 px-4 py-1.5 bg-white text-text-primary font-bold rounded-lg hover:bg-amber-300 transition-colors"
+        >
+          Billetterie
+        </Link>
       </div>
     </div>
   );

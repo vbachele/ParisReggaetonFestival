@@ -34,7 +34,7 @@ const ArtistList = () => {
   });
 
   return (
-    <div className="w-full overflow-hidden py-12">
+    <div className="w-full overflow-hidden py-12" id="lineup">
       <div className="container mx-auto">
         <motion.h2 
           initial={{ x: 100, opacity: 0 }}

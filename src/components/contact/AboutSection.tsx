@@ -15,24 +15,42 @@ interface AboutCard {
 
 const aboutCards: AboutCard[] = [
   {
-    cardClass: "border-none relative overflow-hidden group rounded-xl bg-text-primary",
+    cardClass: "border-none relative overflow-hidden group rounded-xl bg-text-primary bg-[#00b8c9]",
     title: "Nos Spécialités",
     items: [
-      { title: "REGGAETON" },
-      { title: "ZUMBA", description: "(version World Music)" },
-      { title: "TECHNIQUES de DÉHANCHÉS", description: "(BOOTYSHAKE et BODYMOVE)" }
+      { 
+        title: "REGGAETON", 
+        description: "Danse urbaine latine dynamique, mêlant sensualité et énergie."
+      },
+      { 
+        title: "ZUMBA", 
+        description: "Version World Music : Un mélange explosif de rythmes latins, africains et internationaux."
+      },
+      { 
+        title: "TECHNIQUES de DÉHANCHÉS", 
+        description: "BOOTYSHAK et BODYMOVE : Maîtrisez l'art du mouvement des hanches et du bassin."
+      }
     ],
     img: "/contact/rg_booster.jpg",
     imgAlt: "Reggaeton dance",
     className: "w-full h-full rounded-lg shadow-lg object-cover"
   },
   {
-    cardClass: "border-none relative overflow-hidden group rounded-xl bg-[#00b8c9]",
-    title: "Activités",
+    cardClass: "border-none relative overflow-hidden group rounded-xl bg-text-primary",
+    title: "Nos Activités et Événements",
     items: [
-      { title: "Cours", description: "Tous niveaux et styles" },
-      { title: "Stages", description: "Intensifs et thématiques" },
-      { title: "Événements Multi-Danses", description: "Festivals et soirées" }
+      { 
+        title: "Cours", 
+        description: "Des cours adaptés à tous les niveaux, du débutant au confirmé."
+      },
+      { 
+        title: "Stages", 
+        description: "Des stages intensifs et thématiques pour progresser rapidement."
+      },
+      { 
+        title: "Événements Multi-Danses", 
+        description: "Participez à des festivals et soirées exclusives."
+      }
     ],
     img: "/contact/dancing_group.jpg",
     imgAlt: "Dance class",
@@ -47,7 +65,7 @@ const aboutCards: AboutCard[] = [
       { title: "Show sur Scène", description: "L'opportunité de briller et d'être la star de la scène" },
       { title: "Places Limitées", description: "Une aventure humaine et artistique unique" }
     ],
-    img: "/contact/raggaeton_tour.png",
+    img: "/contact/rb_booster.jpg",
     imgAlt: "Reggaeton Booster",
     className: "w-full h-full rounded-lg shadow-lg object-cover"
   }
@@ -96,7 +114,7 @@ const AboutSection = () => {
                         >
                           <div className="font-semibold">{item.title}</div>
                           {item.description && (
-                            <div className="text-sm">{item.description}</div>
+                            <div className="text-sm font-body">{item.description}</div>
                           )}
                         </li>
                       ))}
