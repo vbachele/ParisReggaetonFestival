@@ -60,29 +60,27 @@ const Tickets = () => {
                 <p className="text-white text-sm md:text-lg text-center font-body">
                   Choisissez votre jour ou prenez le FullPass pour profiter de tout le festival !
                 </p>
-                <div className="flex flex-wrap md:flex-nowrap flex-col md:flex-row gap-4 justify-center mt-8">
+                {/* <div className="flex flex-wrap md:flex-nowrap flex-col md:flex-row gap-4 justify-center mt-8">
                   <button onClick={handleButtonClick} className={ticketButtonClass}>Vendredi</button>
                   <button onClick={handleButtonClick} className={ticketButtonClass}>Samedi</button>
                   <button onClick={handleButtonClick} className={ticketButtonClass}>Dimanche</button>
                   <button onClick={handleButtonClick} className={ticketButtonClass}>Forfait FullPass</button>
-                </div>
+                </div> */}
               </CardHeader>
               <div className="w-full mt-8">
-                <a
-                  title="Logiciel billetterie en ligne"
-                  href="https://widget.weezevent.com/ticket/E123456/?code=12345&locale=fr-FR&width_auto=1&color_primary=0032FA&date=2024-03-15&date_end=2024-03-17&price_min=50&price_max=150"
-                  className="weezevent-widget-integration"
-                  data-src="https://widget.weezevent.com/ticket/E123456/?code=12345&locale=fr-FR&width_auto=1&color_primary=0032FA&date=2024-03-15&date_end=2024-03-17&price_min=50&price_max=150"
-                  data-id="123456"
-                  data-resize="1"
-                  data-width_auto="1"
-                  data-noscroll="0"
-                  data-use-container="yes"
-                  data-type="neo"
-                  target="_blank"
-                >
-                  Billetterie Weezevent
-                </a>
+              <a title="Logiciel billetterie en ligne"
+   href="https://weezevent.com/?c=sys_widget"
+   className="weezevent-widget-integration"
+   data-src="https://widget.weezevent.com/ticket/E1239962/?code=56601&locale=fr-FR&width_auto=1&color_primary=00AEEF"
+   data-width="650"
+   data-height="600"
+   data-id="1239962"
+   data-resize="1"
+   data-width_auto="1"
+   data-noscroll="0"
+   data-use-container="yes"
+   data-type="neo"
+   target="_blank">Billetterie Weezevent</a>
               </div>
             </CardContent>
           </Card>
