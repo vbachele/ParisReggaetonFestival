@@ -115,18 +115,19 @@ const ContactCard = () => {
                 </a>
               </div>
             </div>
+          </div>
+        </div>
 
-            <div className="flex items-center space-x-4">
-              <div className="bg-white/10 p-3 rounded-full">
-                <Globe className="h-6 w-6 text-white" />
-              </div>
-              <div>
-                <p className="text-white/60 text-sm font-body">Site Web</p>
-                <a href="https://farahalwayswannadance.podia.com/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-white/80 transition-colors">
-                  farahalwayswannadance.podia.com
-                </a>
-              </div>
-            </div>
+        {/* Website - Full Width */}
+        <div className="mt-8 flex items-center justify-center space-x-4">
+          <div className="bg-white/10 p-3 rounded-full">
+            <Globe className="h-6 w-6 text-white" />
+          </div>
+          <div>
+            <p className="text-white/60 text-sm font-body">Site Web</p>
+            <a href="https://farahalwayswannadance.podia.com/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-white/80 transition-colors whitespace-nowrap">
+              farahalwayswannadance.podia.com
+            </a>
           </div>
         </div>
 

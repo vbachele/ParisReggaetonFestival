@@ -86,7 +86,7 @@ const AboutSection = () => {
         initial={{ x: -100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.7, delay: 0.2 }}
-        className="text-xl mb-16"
+        className="text-xl mb-16 px-4"
       >
         Créée en 2012, nous apportons la joie  une ambiance ensoleillée et des sessions de danse à Paris et dans toute la France.
       </motion.p>
