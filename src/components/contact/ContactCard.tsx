@@ -1,4 +1,4 @@
-import { Phone, Mail, Facebook, Instagram } from 'lucide-react';
+import { Phone, Mail, Facebook, Instagram, Globe } from 'lucide-react';
 import { Card, CardContent } from "@/components/ui/card";
 import { links } from '@/config/links';
 
@@ -100,6 +100,30 @@ const ContactCard = () => {
                 <p className="text-white/60 text-sm font-body">Instagram</p>
                 <a href={links.social.instagram} target="_blank" rel="noopener noreferrer" className="text-white hover:text-white/80 transition-colors">
                   @farah_alwayswannadance
+                </a>
+              </div>
+            </div>
+
+            <div className="flex items-center space-x-4">
+              <div className="bg-white/10 p-3 rounded-full">
+                <Facebook className="h-6 w-6 text-white" />
+              </div>
+              <div>
+                <p className="text-white/60 text-sm font-body">Facebook Farah</p>
+                <a href="https://www.facebook.com/farah.alwayswannadance" target="_blank" rel="noopener noreferrer" className="text-white hover:text-white/80 transition-colors">
+                  Farah Always Wanna Dance
+                </a>
+              </div>
+            </div>
+
+            <div className="flex items-center space-x-4">
+              <div className="bg-white/10 p-3 rounded-full">
+                <Globe className="h-6 w-6 text-white" />
+              </div>
+              <div>
+                <p className="text-white/60 text-sm font-body">Site Web</p>
+                <a href="https://farahalwayswannadance.podia.com/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-white/80 transition-colors">
+                  farahalwayswannadance.podia.com
                 </a>
               </div>
             </div>

@@ -17,8 +17,8 @@ interface FeatureCard {
 const featureCards: FeatureCard[] = [
   {
     cardClass: "border-none relative overflow-hidden group rounded-xl bg-[#00b8c9]",
-    title: "Ouvert à Tous",
-    text: "3 jours de festival et plus de 15 heures de cours pour vivre une expérience unique et intense !",
+    title: "Ouvert à toutes et à tous",
+    text: "Trois jours de festival et plus de 15 heures de cours pour vivre une expérience unique en France, intense et 100% good vibe !",
     img: "/dancePhotos/cours_tous_niveaux.jpg",
     imgAlt: "Tous Niveaux",
     link: links.internal.planning,
@@ -27,7 +27,7 @@ const featureCards: FeatureCard[] = [
   {
     cardClass: "border-none relative overflow-hidden group rounded-xl bg-text-primary",
     title: "L'équipe de Choc",
-    text: "Les meilleurs professeurs internationaux réunis pour partager leur passion, leur énergie et vous faire vivre une expérience unique !",
+    text: "Les meilleurs professeurs internationaux pour partager leur passion, leur énergie et vous faire vivre une aventure incroyable !",
     img: "/affiches/cover_profs.png",
     imgAlt: "Équipe Qualifiée",
     link: links.internal.lineup,
@@ -36,7 +36,7 @@ const featureCards: FeatureCard[] = [
   {
     cardClass: "border-none relative overflow-hidden group rounded-xl bg-purple-800",
     title: "Dernières Places !",
-    text: "Ne manquez pas le premier festival de reggaeton en France ! Réservez maintenant",
+    text: "Dernière place, ne manquez pas le plus grand événement de danse reggaeton jamais vu en France, réservé maintenant !",
     img: "/contact/rg_booster.jpg",
     imgAlt: "Places Limitées",
     link: links.external.weezevent,

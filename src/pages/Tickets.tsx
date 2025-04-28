@@ -29,7 +29,7 @@ const Tickets = () => {
 
   return (
     <Layout>
-      <div className="flex flex-col items-center min-h-[80vh] w-full">
+      <div className="flex flex-col items-center min-h-[80vh] w-full py-8">
       <div className="md:block hidden relative w-full mt-14 h-[40vh] md:h-[400px]">
           <img 
             src="/cover_Reggaeton_Festival.png" 
@@ -82,6 +82,9 @@ const Tickets = () => {
    data-type="neo"
    target="_blank">Billetterie Weezevent</a>
               </div>
+              <p className="text-xs text-gray-600 py-4  text-center">
+                L'association ne fait pas crédit et ne procède à aucun remboursement en cas de désistement, de retard ou d'absence.
+              </p>
             </CardContent>
           </Card>
         </div>

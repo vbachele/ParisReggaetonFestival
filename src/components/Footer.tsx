@@ -7,7 +7,7 @@ export const Footer = () => {
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="text-sm text-white/80">
-            © 2024 Paris Reggaeton Festival. Tous droits réservés.
+            © 2025 Paris Reggaeton Festival. Tous droits réservés.
           </div>
 
           <div className="flex items-center gap-6">

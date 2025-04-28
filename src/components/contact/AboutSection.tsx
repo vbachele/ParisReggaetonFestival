@@ -20,15 +20,15 @@ const aboutCards: AboutCard[] = [
     items: [
       { 
         title: "REGGAETON", 
-        description: "Danse urbaine latine dynamique, mêlant sensualité et énergie."
+        description: "Danse latine, urbaine,caribéenne, un Style dynamique, mélangeant sensualité et énergie"
       },
       { 
         title: "ZUMBA", 
-        description: "Version World Music : Un mélange explosif de rythmes latins, africains et internationaux."
+        description: "version world music (mélange explosif de rythmes latins et de danses du monde, Une expérience unique !"
       },
       { 
         title: "TECHNIQUES de DÉHANCHÉS", 
-        description: "BOOTYSHAK et BODYMOVE : Maîtrisez l'art du mouvement des hanches et du bassin."
+        description: "BOOTYSHAKE et BODYMOVE : Maîtriser l'art du mouvement, du buste et du bassin ! Des méthodes idéales pour progresser dans tous les styles de danse !"
       }
     ],
     img: "/contact/rg_booster.jpg",
@@ -41,15 +41,15 @@ const aboutCards: AboutCard[] = [
     items: [
       { 
         title: "Cours", 
-        description: "Des cours adaptés à tous les niveaux, du débutant au confirmé."
+        description: "Adaptés à tous niveaux, du débutant au confirmé"
       },
       { 
         title: "Stages", 
-        description: "Des stages intensifs et thématiques pour progresser rapidement."
+        description: "Intensifs et thématiques pour progresser rapidement."
       },
       { 
         title: "Événements Multi-Danses", 
-        description: "Participez à des festivals et soirées exclusives."
+        description: "conception & participation à des festivals, soirées exclusives et séjours dansants."
       }
     ],
     img: "/contact/dancing_group.jpg",
@@ -58,11 +58,11 @@ const aboutCards: AboutCard[] = [
   },
   {
     cardClass: "border-none relative overflow-hidden group rounded-xl bg-purple-800",
-    title: "Atelier Chorégraphique 2025",
+    title: "Atelier Chorégraphique",
     items: [
       { title: "REGGAETON BOOSTER", description: "50h de danse en groupe pour préparer un SHOW spectaculaire" },
       { title: "Préparation Intensive", description: "Sessions de 3h par semaine pour une progression rapide" },
-      { title: "Show sur Scène", description: "L'opportunité de briller et d'être la star de la scène" },
+      { title: "Show sur Scène", description: "Performance live sur la scène principale du Paris Reggaeton Festival" },
       { title: "Places Limitées", description: "Une aventure humaine et artistique unique" }
     ],
     img: "/contact/rb_booster.jpg",
@@ -88,7 +88,7 @@ const AboutSection = () => {
         transition={{ duration: 0.7, delay: 0.2 }}
         className="text-xl mb-16"
       >
-        Créée en 2012, nous apportons la joie de la danse à Paris et en Ile-De-France
+        Créée en 2012, nous apportons la joie  une ambiance ensoleillée et des sessions de danse à Paris et dans toute la France.
       </motion.p>
 
       <div className="flex flex-col gap-6 max-w-6xl mx-auto px-4">
