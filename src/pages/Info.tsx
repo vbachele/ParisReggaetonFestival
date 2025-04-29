@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import FestivalAddress from '@/components/infos/FestivalAddress';
 import FestivalTransport from '@/components/infos/FestivalTransport';
 import FestivalRestauration from '@/components/infos/FestivalRestauration';
+import FestivalOnsite from '@/components/infos/FestivalOnsite';
 
 const baseTitleAnim = {
   initial: { x: -100, opacity: 0 },
@@ -83,7 +84,15 @@ const Info = () => {
                 </Card>
               </motion.div>
             </section>
-
+            <section>
+              <motion.div {...cardAnim} transition={{ ...cardAnim.transition, delay: 0.55 }}>
+                <Card>
+                  <CardContent className="p-8 bg-white rounded-lg">
+                    <FestivalOnsite />
+                  </CardContent>
+                </Card>
+              </motion.div>
+            </section>
             <section>
               <motion.div {...cardAnim} transition={{ ...cardAnim.transition, delay: 0.4 }}>
                 <Card>
@@ -93,6 +102,8 @@ const Info = () => {
                 </Card>
               </motion.div>
             </section>
+
+            
           </div>
         </div>
       </div>
