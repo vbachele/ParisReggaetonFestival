@@ -17,14 +17,24 @@ const FestivalAddress = () => (
         className="rounded-lg"
       ></iframe>
     </div>
-    <a 
-      href="https://www.google.com/maps/place/Salle+de+r%C3%A9ception+La+Grange/@48.7481609,2.3450823,16z/data=!3m1!4b1!4m6!3m5!1s0x47e6769a65d8006f:0x1e8881e2141a341!8m2!3d48.7481574!4d2.3476572!16s%2Fg%2F11bwfknhlw?entry=ttu" 
-      target="_blank" 
-      rel="noopener noreferrer"
-      className={`inline-flex items-center text-text-primary hover:underline`}
-    >
-      <MapPin className="w-4 h-4 mr-2" /> Voir sur Google Maps
-    </a>
+    <div className="flex flex-wrap flex-col md:flex-row gap-4">
+      <a 
+        href="https://www.google.com/maps/place/Salle+de+r%C3%A9ception+La+Grange/@48.7481609,2.3450823,16z/data=!3m1!4b1!4m6!3m5!1s0x47e6769a65d8006f:0x1e8881e2141a341!8m2!3d48.7481574!4d2.3476572!16s%2Fg%2F11bwfknhlw?entry=ttu" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="inline-flex items-center text-text-primary hover:underline"
+      >
+        <MapPin className="w-4 h-4 mr-2" /> Google Maps
+      </a>
+      <a 
+        href="https://maps.apple.com/?q=La+Grange&ll=48.7481574,2.3476572"
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="inline-flex items-center text-text-primary hover:underline"
+      >
+        <MapPin className="w-4 h-4 mr-2" /> Apple Plans
+      </a>
+    </div>
   </>
 );
 
