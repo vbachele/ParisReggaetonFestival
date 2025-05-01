@@ -30,7 +30,7 @@ const Tickets = () => {
   return (
     <Layout>
       <div className="flex flex-col items-center min-h-[80vh] w-full py-8">
-      <div className="md:block hidden relative w-full mt-14 h-[40vh] md:h-[400px]">
+      <div className="md:block hidden relative w-full mt-6 h-[40vh] md:h-[400px]">
           <img 
             src="/cover_Reggaeton_Festival.png" 
             alt="Paris Reggaeton Festival Information" 
@@ -41,7 +41,7 @@ const Tickets = () => {
             
           </div>
         </div>
-        <div className="md:hidden relative w-full mt-20 h-[48vh]">
+        <div className="md:hidden relative w-full mt-12 h-[48vh]">
           <img 
             src="/cover_Mobile_Raggaeton_Festival.png" 
             alt="Paris Reggaeton Festival Information" 
