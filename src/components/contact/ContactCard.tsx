@@ -50,7 +50,7 @@ const ContactCard = () => {
               <div className="flex items-center space-x-4">
                 <div className="w-16 h-16 rounded-full overflow-hidden bg-white/10">
                   <img 
-                    src="/contact/farah.jpg" 
+                    src="/contact/philippe.jpg" 
                     alt="Philippe" 
                     className="w-full h-full object-cover"
                   />
