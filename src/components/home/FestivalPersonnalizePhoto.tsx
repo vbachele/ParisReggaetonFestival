@@ -22,22 +22,36 @@ const FestivalPersonnalizePhoto = () => {
         >
           {/* First image */}
           <div className="relative w-full aspect-square max-w-md">
-            <img
-              src="/affiches/personnalized_photo.jpg"
-              alt="Photo template 1"
-              className="object-cover rounded-lg"
-              sizes="(max-width: 768px) 100vw, 50vw"
-            />
+            <a
+              href="https://www.twibbonize.com/prf2025jyserai"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full h-full"
+            >
+              <img
+                src="/affiches/personnalized_photo.jpg"
+                alt="Photo template 1"
+                className="object-cover rounded-lg w-full h-full"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+            </a>
           </div>
           
           {/* Second image */}
           <div className="relative w-full aspect-square max-w-md">
-            <img
-              src="/affiches/personnalized_photo2.jpg"
-              alt="Photo template 2"
-              className="object-cover rounded-lg"
-              sizes="(max-width: 768px) 100vw, 50vw"
-            />
+            <a
+              href="https://www.twibbonize.com/prf2025jyserai"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full h-full"
+            >
+              <img
+                src="/affiches/personnalized_photo2.jpg"
+                alt="Photo template 2"
+                className="object-cover rounded-lg w-full h-full"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+            </a>
           </div>
         </motion.div>
 

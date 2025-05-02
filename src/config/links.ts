@@ -1,7 +1,7 @@
 export const links = {
   social: {
     instagram: "https://www.instagram.com/farah_alwayswannadance/",
-    facebook: "https://www.facebook.com/ambiance.zumba.fr",
+    facebook: "https://www.facebook.com/farah.alwayswannadance",
     email: "mailto:ambiance-zumba@hotmail.fr"
   },
   external: {
