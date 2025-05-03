@@ -64,7 +64,7 @@ const ArtistList = () => {
                           </div>
                         </div>
                         {/* Flip Arrow */}
-                        <div className="absolute bottom-1 md:right-4 right-2 p-1.5 rounded-full backdrop-blur-sm">
+                        <div className="absolute bottom-1 md:right-4 right-2 p-1.5 rounded-full ">
                           <motion.div
                             animate={{ x: [0, 2, 0] }}
                             transition={{ duration: 1, repeat: Infinity, ease: "easeInOut" }}
@@ -74,10 +74,12 @@ const ArtistList = () => {
                         </div>
                       </div>
                       {/* Back */}
-                      <div className="absolute w-full h-full backface-hidden rotate-y-180 flex flex-col items-center justify-center bg-text-primary p-6 rounded-lg">
-                        <h3 className="text-white text-2xl md:text-3xl font-bold mb-2">{artist.name}</h3>
-                        <p className="text-white/80 text-base md:text-lg font-body mb-4">{artist.location}</p>
-                        <p className="text-white text-center font-body">{artist.explanation}</p>
+                      <div className="absolute w-full h-full backface-hidden rotate-y-180 flex flex-col items-center justify-center bg-text-primary p-4 rounded-lg">
+                        <h3 className="text-white text-xl md:text-3xl font-bold mb-2">{artist.name}</h3>
+                        <p className="text-white/80 text-sm md:text-lg font-body mb-2">{artist.location}</p>
+                        <div className="text-white text-xs md:text-base text-center font-body leading-snug max-h-48 overflow-y-auto px-1">
+                          {artist.explanation}
+                        </div>
                       </div>
                     </div>
                   </div>

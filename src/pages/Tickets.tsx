@@ -25,8 +25,6 @@ const Tickets = () => {
     }
   };
 
-  const ticketButtonClass = "bg-text-primary text-white border-2 border-white font-bold px-6 py-3 rounded-lg text-base md:text-lg uppercase shadow hover:bg-white hover:text-text-primary transition";
-
   return (
     <Layout>
       <div className="flex flex-col items-center min-h-[80vh] w-full py-8">
@@ -58,14 +56,9 @@ const Tickets = () => {
                   BILLETTERIE
                 </p>
                 <p className="text-white text-sm md:text-lg text-center font-body">
-                  Choisissez votre jour ou prenez le FullPass pour profiter de tout le festival !
+                  Choisissez votre journée ou prenez le FullPass pour profiter de tout le festival !
                 </p>
-                {/* <div className="flex flex-wrap md:flex-nowrap flex-col md:flex-row gap-4 justify-center mt-8">
-                  <button onClick={handleButtonClick} className={ticketButtonClass}>Vendredi</button>
-                  <button onClick={handleButtonClick} className={ticketButtonClass}>Samedi</button>
-                  <button onClick={handleButtonClick} className={ticketButtonClass}>Dimanche</button>
-                  <button onClick={handleButtonClick} className={ticketButtonClass}>Forfait FullPass</button>
-                </div> */}
+              
               </CardHeader>
               <div className="w-full mt-8">
               <a title="Logiciel billetterie en ligne"

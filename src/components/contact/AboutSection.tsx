@@ -20,15 +20,15 @@ const aboutCards: AboutCard[] = [
     items: [
       { 
         title: "REGGAETON", 
-        description: "Danse latine, urbaine,caribéenne, un Style dynamique, mélangeant sensualité et énergie"
+        description: "Danse latine, urbaine, caribéenne, un style dynamique, mélangeant sensualité et énergie"
       },
       { 
         title: "ZUMBA", 
-        description: "version world music (mélange explosif de rythmes latins et de danses du monde, Une expérience unique !"
+        description: "version world music : mélange explosif de rythmes latins et de danses du monde, Une expérience unique !"
       },
       { 
         title: "TECHNIQUES de DÉHANCHÉS", 
-        description: "BOOTYSHAKE et BODYMOVE : Maîtriser l'art du mouvement, du buste et du bassin ! Des méthodes idéales pour progresser dans tous les styles de danse !"
+        description: "BOOTYSHAKE et BODYMOVE : Maîtriser l'art du mouvement du buste et du bassin ! Des méthodes idéales pour progresser dans tous les styles de danse !"
       }
     ],
     img: "/contact/rg_booster.jpg",
