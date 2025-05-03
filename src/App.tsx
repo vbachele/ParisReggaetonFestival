@@ -5,10 +5,12 @@ import { Planning } from './pages/Planning';
 import Tickets from './pages/Tickets';
 import Contact from './pages/Contact';
 import { Header } from './components/Header';
+import ScrollToTop from './components/ScrollToTop';
 
 const App = () => {
   return (
     <Router>
+      <ScrollToTop />
       <div className="min-h-screen bg-background-primary">
         <Header />
         <main>
