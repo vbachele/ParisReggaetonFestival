@@ -22,7 +22,7 @@ export const artists: Artist[] = [
     name: "Jennifer", 
     location: "Belgique", 
     image: "/dancers/jennifer.png", 
-    explanation: "Jennifer vient de Belgique et apporte une touche internationale et innovante à chaque performance." 
+    explanation: "Référence du Reggaeton en Belgique, Jennifer partage sa passion à travers des cours, des stages et des shows latinos explosifs. Son énergie, sa technicité et sa maîtrise de la scène font d’elle une artiste emblématique dans son pays." 
   },
   { 
     name: "Luis-Carlos", 
