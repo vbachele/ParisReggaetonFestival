@@ -32,7 +32,7 @@ const Info = () => {
   return (
     <Layout>
       <div className="relative w-full">
-        <div className="md:block hidden relative w-full mt-14 h-[40vh] md:h-[400px]">
+        <div className="md:block hidden relative w-full pt-20 h-[40vh] md:h-[480px]">
           <img 
             src="/cover_Reggaeton_Festival.png" 
             alt="Paris Reggaeton Festival Information" 
@@ -47,7 +47,7 @@ const Info = () => {
             </div>
           </div>
         </div>
-        <div className="md:hidden relative w-full mt-20 h-[48vh]">
+        <div className="md:hidden relative w-full pt-20 h-[48vh]">
           <img 
             src="/cover_Mobile_Raggaeton_Festival.png" 
             alt="Paris Reggaeton Festival Information" 

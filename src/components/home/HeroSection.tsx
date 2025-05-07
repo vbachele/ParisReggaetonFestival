@@ -4,7 +4,7 @@ import { links } from '@/config/links';
 const HeroSection = () => {
   return (
     <div className="relative w-full">
-      <div className="md:block hidden relative w-full mt-10 h-[60vh] md:h-[800px]">
+      <div className="md:block hidden relative w-full md:mt-16 lg:mt-18 h-[60vh] md:h-[800px]">
         <img 
           src="/cover_Reggaeton_Festival.png" 
           alt="Paris Reggaeton Festival" 
