@@ -6,6 +6,7 @@ import Tickets from './pages/Tickets';
 import Contact from './pages/Contact';
 import { Header } from './components/Header';
 import ScrollToTop from './components/ScrollToTop';
+import Boutique from './pages/Boutique';
 
 const App = () => {
   return (
@@ -16,8 +17,9 @@ const App = () => {
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/info" element={<Info />} />
             <Route path="/planning" element={<Planning />} />
+            <Route path="/info" element={<Info />} />
+            <Route path="/boutique" element={<Boutique />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/tickets" element={<Tickets />} />
           </Routes>

@@ -10,7 +10,8 @@ export const links = {
   internal: {
     lineup: "#lineup",
     planning: "/planning",
-    tickets: "/tickets"
+    tickets: "/tickets",
+    boutique: "/boutique"
   }
 } as const;
 

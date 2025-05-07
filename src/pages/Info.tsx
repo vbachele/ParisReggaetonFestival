@@ -47,7 +47,7 @@ const Info = () => {
             </div>
           </div>
         </div>
-        <div className="md:hidden relative w-full pt-20 h-[48vh]">
+        <div className="md:hidden relative w-full pt-20 h-[60vh]">
           <img 
             src="/cover_Mobile_Raggaeton_Festival.png" 
             alt="Paris Reggaeton Festival Information" 

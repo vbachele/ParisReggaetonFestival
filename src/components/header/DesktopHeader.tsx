@@ -19,8 +19,9 @@ export const DesktopHeader = () => {
       </div>
       <div className="flex items-center space-x-4 ml-auto">
         <Link to="/" className={`px-4 py-2 rounded-lg transition-all ${isActive('/') ? 'text-white font-bold' : 'text-white font-semibold hover:text-[#9964FF]'}`}>Accueil</Link>
-        <Link to="/info" className={`px-4 py-2 rounded-lg transition-all ${isActive('/info') ? 'text-white font-bold' : 'text-white font-semibold hover:text-[#9964FF]'}`}>Infos</Link>
         <Link to="/planning" className={`px-4 py-2 rounded-lg transition-all ${isActive('/planning') ? 'text-white font-bold' : 'text-white font-semibold hover:text-[#9964FF]'}`}>Planning</Link>
+        <Link to="/info" className={`px-4 py-2 rounded-lg transition-all ${isActive('/info') ? 'text-white font-bold' : 'text-white font-semibold hover:text-[#9964FF]'}`}>Infos</Link>
+        <Link to="/boutique" className={`px-4 py-2 rounded-lg transition-all ${isActive('/boutique') ? 'text-white font-bold' : 'text-white font-semibold hover:text-[#9964FF]'}`}>Boutique</Link>
         <Link to="/contact" className={`px-4 py-2 rounded-lg transition-all ${isActive('/contact') ? 'text-white font-bold' : 'text-white font-semibold hover:text-[#9964FF]'}`}>Contact</Link>
         <Link 
           to={links.internal.tickets} 

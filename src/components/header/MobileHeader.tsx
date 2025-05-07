@@ -11,8 +11,9 @@ export const MobileHeader = () => {
 
   const menuItems = [
     { label: 'Accueil', to: '/' },
-    { label: 'Infos', to: '/info' },
     { label: 'Planning', to: '/planning' },
+    { label: 'Infos', to: '/info' },
+    { label: 'Boutique', to: '/boutique' },
     { label: 'Contact', to: '/contact' },
   ];
 
