@@ -70,7 +70,7 @@ const FeatureCards = () => {
                         href={card.link} 
                         className="inline-flex items-center text-white hover:underline gap-2"
                       >
-                        <span className="text-shadow-outline border-[0.5px] p-2 border-white">Découvrir</span> <ArrowRight className="w-4 h-4" />
+                        <span className="text-shadow-outline border-[0.5px] rounded-lg p-2 border-white">Découvrir</span> <ArrowRight className="w-4 h-4" />
                       </a>
                     )} 
                     {!card.link.startsWith('#') && (
@@ -78,7 +78,7 @@ const FeatureCards = () => {
                         to={card.link} 
                         className="inline-flex items-center text-white hover:underline gap-2"
                       >
-                        <span className='text-shadow-outline border-[0.5px] p-2 border-white'>Découvrir</span> <ArrowRight className="w-4 h-4" />
+                        <span className='text-shadow-outline border-[0.5px] rounded-lg p-2 border-white'>Découvrir</span> <ArrowRight className="w-4 h-4" />
                       </Link>
                     )}
                   
