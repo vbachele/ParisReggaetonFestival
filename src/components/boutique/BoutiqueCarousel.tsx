@@ -23,7 +23,7 @@ interface Product {
 const products: Product[] = [
   {
     id: 1,
-    name: "T-shirt Collection 2024",
+    name: "OCEANE Collection 2024",
     price: "29.99€",
     images: [
       "https://images.unsplash.com/photo-1576566588028-4147f3842f27?q=80&w=1000&auto=format&fit=crop",
@@ -41,7 +41,7 @@ const products: Product[] = [
   },
   {
     id: 2,
-    name: "Bucket Hat Festival",
+    name: "NOOB Hat Festival",
     price: "24.99€",
     images: [
       "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?q=80&w=1000&auto=format&fit=crop",
@@ -77,7 +77,7 @@ const products: Product[] = [
   },
   {
     id: 4,
-    name: "Tote Bag Festival",
+    name: "VINCENT Bag Festival",
     price: "15.99€",
     images: [
       "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=1000&auto=format&fit=crop",

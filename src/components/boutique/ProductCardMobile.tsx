@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import ImageStepper from "./ImageStepper";
 import ProductSizes from "./ProductSizes";
+import ProductTitlePrice from "./ProductTitlePrice";
 
 interface Product {
   id: number;
@@ -30,10 +31,10 @@ const ProductCardMobile = ({ product }: ProductCardMobileProps) => {
   };
 
   return (
-    <Card className="h-full flex flex-col border-0 shadow-none">
-      <CardHeader className="p-4">
+    <Card className="h-full flex flex-col border-0 shadow-none mb-6">
+      <CardHeader className=" rounded-b-none p-0">
         <div
-          className="aspect-square relative overflow-hidden rounded-lg"
+          className="aspect-square relative overflow-hidden rounded-t-lg"
           onTouchStart={goToNextImage}
         >
           <img
@@ -41,11 +42,7 @@ const ProductCardMobile = ({ product }: ProductCardMobileProps) => {
             alt={`${product.name} - Vue ${currentImageIndex + 1}`}
             className="object-cover w-full h-full transition-transform duration-300"
           />
-          <div className="absolute bottom-0 left-0 right-0 rounded-lg bg-white/60 backdrop-blur-sm md:mx-8 md:my-4 mx-2 my-2">
-            <Button className="w-full" size="lg">
-              <span className="text-sm">Ajouter</span>
-            </Button>
-          </div>
+        
          
           <div className="absolute top-2 left-0 right-0 px-2 md:px-4">
             <div className="flex items-center justify-center gap-1 md:gap-2">
@@ -59,10 +56,19 @@ const ProductCardMobile = ({ product }: ProductCardMobileProps) => {
           </div>
         </div>
       </CardHeader>
-      <CardContent className="flex-grow px-8  mx-4 text-center bg-white rounded-lg">
-        <h3 className="text-lg font-bold">{product.name}</h3>
-        <p className="text-base font-body text-primary">{product.price}</p>
-        <ProductSizes sizes={product.sizes} />
+      <CardContent className="flex flex-col justify-between h-full min-h-[240px] py-6 px-6 bg-white rounded-b-lg">
+        <div>
+          <ProductTitlePrice name={product.name} price={product.price} />
+          <ProductSizes sizes={product.sizes} />
+        </div>
+        <div>
+          <Button className="w-full mt-2 bg-text-primary text-white" size="lg">
+            <span className="text-sm">Ajouter au panier</span>
+          </Button>
+          <p className="text-xs text-gray-500 italic text-left font-body mt-2">
+            *Produit à récupérer lors du festival
+          </p>
+        </div>
       </CardContent>
     </Card>
   );
