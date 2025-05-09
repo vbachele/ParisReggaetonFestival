@@ -29,6 +29,10 @@ export default function Boutique() {
         </div>
       </div>
 
+       
+
+     
+
       <BoutiqueCarousel />
     </main>
   );
