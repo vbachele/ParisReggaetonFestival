@@ -5,6 +5,7 @@ import FestivalAddress from '@/components/infos/FestivalAddress';
 import FestivalTransport from '@/components/infos/FestivalTransport';
 import FestivalRestauration from '@/components/infos/FestivalRestauration';
 import FestivalOnsite from '@/components/infos/FestivalOnsite';
+import { MobileTopImageCrop } from '@/components/MobileTopImageCrop';
 
 const baseTitleAnim = {
   initial: { x: -100, opacity: 0 },
@@ -47,19 +48,13 @@ const Info = () => {
             </div>
           </div>
         </div>
-        <div className="md:hidden relative w-full pt-20 h-[60vh]">
-          <img 
-            src="/cover_Mobile_Raggaeton_Festival.png" 
-            alt="Paris Reggaeton Festival Information" 
-            className="w-full h-full object-cover object-center"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/50"></div>
-          <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+        <MobileTopImageCrop
+        />
+         <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
             <motion.h1 {...titleAnim} className="text-3xl font-bold mb-4 text-center md:text-left">
               Informations Pratiques
             </motion.h1>
           </div>
-        </div>
       </div>
 
       <div className={`min-h-screen bg-background-primary`}>
