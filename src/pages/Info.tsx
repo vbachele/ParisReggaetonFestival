@@ -5,7 +5,7 @@ import FestivalAddress from '@/components/infos/FestivalAddress';
 import FestivalTransport from '@/components/infos/FestivalTransport';
 import FestivalRestauration from '@/components/infos/FestivalRestauration';
 import FestivalOnsite from '@/components/infos/FestivalOnsite';
-import { MobileTopImageCrop } from '@/components/MobileTopImageCrop';
+import { MobileTopImageCrop } from '@/components/utils/MobileTopImageCrop';
 
 const baseTitleAnim = {
   initial: { x: -100, opacity: 0 },
@@ -50,7 +50,7 @@ const Info = () => {
         </div>
         <MobileTopImageCrop
         />
-         <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+         <div className="absolute md:hidden bottom-0 left-0 right-0 p-6 text-white">
             <motion.h1 {...titleAnim} className="text-3xl font-bold mb-4 text-center md:text-left">
               Informations Pratiques
             </motion.h1>

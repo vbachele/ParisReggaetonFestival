@@ -5,7 +5,7 @@ import { Planning } from './pages/Planning';
 import Tickets from './pages/Tickets';
 import Contact from './pages/Contact';
 import { Header } from './components/Header';
-import ScrollToTop from './components/ScrollToTop';
+import ScrollToTop from './components/utils/ScrollToTop';
 import Boutique from './pages/Boutique';
 
 const App = () => {
