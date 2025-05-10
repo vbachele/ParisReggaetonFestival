@@ -5,6 +5,7 @@ import ImageStepper from "./ImageStepper";
 import ProductSizes from "./ProductSizes";
 import ProductTitlePrice from "./ProductTitlePrice";
 import { Product } from "./utils/BoutiqueProducts";
+import ProductColors from "./ProductColors";
 
 interface ProductCardMobileProps {
   product: Product;
@@ -46,6 +47,7 @@ const ProductCardMobile = ({ product }: ProductCardMobileProps) => {
       <CardContent className="flex flex-col justify-between h-full min-h-[240px] py-6 px-6 bg-white rounded-b-lg">
         <div>
           <ProductTitlePrice name={product.name} price={product.price} />
+          <ProductColors colors={product.color} />
           <ProductSizes sizes={product.sizes} />
         </div>
         <div>
