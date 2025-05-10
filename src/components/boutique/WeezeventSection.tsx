@@ -15,7 +15,6 @@ const WeezeventSection = () => {
               Tu peux accéder à la boutique, en avant première, 24h avant tout le monde !
             </span>
           </div>
-          {/* Bullet points in colored box */}
           <div className=" rounded-2xl px-2 md:px-8 py-4 max-w-4xl mx-auto">
             <ul className="flex flex-col gap-6 text-white text-left font-semibold text-sm md:text-base font-body">
               <li className="flex items-start gap-4">
@@ -38,18 +37,16 @@ const WeezeventSection = () => {
               </li>
             </ul>
           </div>
-          {/* Attention box */}
+          
           <div className="bg-[#fff7e6] text-[#a16207] rounded-xl px-4 py-4 text-center max-w-4xl mx-auto">
             <span className="font-bold">Attention : ce n'est pas encore un achat définitif.</span>
             <br />
             <span>Seule la commande lors de l'ouverture officielle de la boutique validera ton article.</span>
           </div>
-          {/* Final info */}
         
-          {/* Instagram call to action */}
           <div className="flex flex-col items-center justify-center">
             <div className="flex flex-col items-center gap-2">
-              <p className="text-white text-lg font-body text-center">
+              <p className="text-white text-base font-body text-center">
                 Envie de donner ton avis, de poser des questions ou de faire des suggestions sur cette toute nouvelle collection ?
               </p>
               <a
