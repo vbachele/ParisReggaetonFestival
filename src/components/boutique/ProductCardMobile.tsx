@@ -52,8 +52,8 @@ const ProductCardMobile = ({ product }: ProductCardMobileProps) => {
         </div>
         <div>
           <Button className="w-full mt-2 bg-text-primary text-white" size="lg">
-            <span className="text-sm">Ajouter au panier</span>
-          </Button>
+          <a href="#weezevent-section">Ajouter au panier</a>
+                    </Button>
           <p className="text-xs text-gray-500 italic text-left font-body mt-2">
             *Produit à récupérer lors du festival
           </p>
