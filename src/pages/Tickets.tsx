@@ -1,6 +1,5 @@
 import { Layout } from '@/components/Layout';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
-import { motion } from 'framer-motion';
 import { useEffect } from 'react';
 
 const Tickets = () => {
@@ -16,14 +15,6 @@ const Tickets = () => {
       document.body.removeChild(script);
     };
   }, []);
-
-  // Button click handler (for now, just scrolls to widget)
-  const handleButtonClick = () => {
-    const widget = document.querySelector('.weezevent-widget-integration');
-    if (widget) {
-      widget.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
 
   return (
     <Layout>

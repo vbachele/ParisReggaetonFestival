@@ -79,6 +79,7 @@ export const products: Product[] = [
     images: [
       "/boutique/tote-bag1.jpg",
       "/boutique/tote-bag2.jpg",
+      "/boutique/tote-bag3.jpg",
     ],
     description: "Tote bag écologique aux couleurs du festival",
     sizes: {

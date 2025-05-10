@@ -1,6 +1,20 @@
 import { BoutiqueCarousel } from "@/components/boutique/BoutiqueCarousel";
-
+import { useEffect } from "react";
 export default function Boutique() {
+
+   useEffect(() => {
+    // Load Weezevent script
+    const script = document.createElement('script');
+    script.src = 'https://widget.weezevent.com/weez.js';
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      // Cleanup script when component unmounts
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <main className="min-h-screen bg-background">
       <div className="relative w-full">
@@ -28,12 +42,22 @@ export default function Boutique() {
           </div>
         </div>
       </div>
-
-       
-
-     
-
       <BoutiqueCarousel />
+        <div className="w-full mx-auto md:px-40 px-4 md:py-8 py-4">
+        <a title="Logiciel billetterie en ligne"
+   href="https://weezevent.com/?c=sys_widget"
+   className="weezevent-widget-integration"
+   data-src="https://widget.weezevent.com/ticket/E1330076/?code=49172&locale=fr-FR&width_auto=1&color_primary=00AEEF"
+   data-width="650"
+   data-height="600"
+   data-id="1330076"
+   data-resize="1"
+   data-width_auto="1"
+   data-noscroll="0"
+   data-use-container="yes"
+   data-type="neo"
+   target="_blank">Billetterie Weezevent</a>
+   </div>
     </main>
   );
 } 
