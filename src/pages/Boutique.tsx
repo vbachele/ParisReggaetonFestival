@@ -6,7 +6,7 @@ const Boutique = () => {
       <div className="min-h-screen flex flex-col items-center justify-center bg-background-primary px-4">
         <div className="flex flex-col items-center justify-center w-full max-w-2xl py-16">
         <h1 className="text-text-primary text-4xl md:text-6xl font-extrabold font-title text-center mb-8 leading-tight">
-            Boutique en cours de construction
+            Boutique disponible très bientôt
           </h1>
           <video
             src="/videos/work_in_progress.mp4"
