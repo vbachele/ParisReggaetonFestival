@@ -7,7 +7,7 @@ interface ProductColorsProps {
 const ProductColors: React.FC<ProductColorsProps> = ({ colors }) => {
   return (
     <div className="flex items-center gap-2 mt-2">
-      <span className="text-sm font-medium font-body">Couleurs:</span>
+      <span className="text-sm font-body font-semibold">Couleurs:</span>
       {colors.map((color) => (
         <div
           key={color}

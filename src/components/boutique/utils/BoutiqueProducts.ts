@@ -74,7 +74,7 @@ export const products: Product[] = [
   },
   {
     id: 4,
-    name: "Tote Bag",
+    name: "TOTE BAG",
     price: "15.99€",
     images: [
       "/boutique/tote-bag1.jpg",

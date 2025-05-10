@@ -16,19 +16,15 @@ const ProductSizes: React.FC<ProductSizesProps> = ({ sizes }) => {
 
   return (
     <div className="mt-2">
-      <div className="flex items-center gap-3">
-        <span className="text-sm font-semibold text-gray-700 font-body whitespace-nowrap">
+      <div className="flex items-center gap-2">
+        <span className="text-sm font-body whitespace-nowrap font-semibold">
           Tailles disponibles:
         </span>
-        <div className="flex gap-1">
-          {Object.entries(sizes).map(([size, available]) => (
+        <div className="flex gap-2">
+          {Object.entries(sizes).map(([size]) => (
             <div
               key={size}
-              className={`w-4 h-4 rounded-lg flex items-center justify-center font-body text-sm transition
-                ${available
-                  ? 'border-gray-400 text-gray-800 bg-white'
-                  : 'border-gray-200 text-gray-300 bg-gray-100'
-                }`}
+              className={`rounded-lg flex items-center font justify-start font-body text-sm transition `}
             >
               {size}
             </div>
