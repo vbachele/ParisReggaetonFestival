@@ -1,19 +1,7 @@
+import { Product } from "./utils/BoutiqueProducts";
 import ProductCardDesktop from "./ProductCardDesktop";
 import ProductCardMobile from "./ProductCardMobile";
 
-interface Product {
-  id: number;
-  name: string;
-  price: string;
-  images: string[];
-  description: string;
-  sizes: {
-    S: boolean;
-    M: boolean;
-    L: boolean;
-    XL: boolean;
-  };
-}
 
 interface ProductCardProps {
   product: Product;

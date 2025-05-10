@@ -4,20 +4,8 @@ import { useState, useEffect, useRef } from "react";
 import ImageStepper from "./ImageStepper";
 import ProductSizes from "./ProductSizes";
 import ProductTitlePrice from "./ProductTitlePrice";
-
-interface Product {
-  id: number;
-  name: string;
-  price: string;
-  images: string[];
-  description: string;
-  sizes: {
-    S: boolean;
-    M: boolean;
-    L: boolean;
-    XL: boolean;
-  };
-}
+import { Product } from "./utils/BoutiqueProducts";
+import ProductColors from "./ProductColors";
 
 interface ProductCardDesktopProps {
   product: Product;
@@ -92,11 +80,12 @@ const ProductCardDesktop = ({ product }: ProductCardDesktopProps) => {
       <CardContent className="flex flex-col justify-between h-full min-h-[220px] py-6 px-6 bg-white rounded-b-lg">
         <div>
           <ProductTitlePrice name={product.name} price={product.price} />
+          <ProductColors colors={product.color} />
           <ProductSizes sizes={product.sizes} />
         </div>
         <div>
           <Button className="w-full mt-2 bg-text-primary text-white" size="lg">
-            <span className="text-sm">Ajouter au panier</span>
+            <div className="text-sm">Ajouter au panier</div>
           </Button>
           <p className="text-xs text-gray-500 italic text-left font-body mt-2">
             *Produit à récupérer lors du festival

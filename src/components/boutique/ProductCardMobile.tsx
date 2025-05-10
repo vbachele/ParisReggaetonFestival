@@ -4,20 +4,7 @@ import { useState } from "react";
 import ImageStepper from "./ImageStepper";
 import ProductSizes from "./ProductSizes";
 import ProductTitlePrice from "./ProductTitlePrice";
-
-interface Product {
-  id: number;
-  name: string;
-  price: string;
-  images: string[];
-  description: string;
-  sizes: {
-    S: boolean;
-    M: boolean;
-    L: boolean;
-    XL: boolean;
-  };
-}
+import { Product } from "./utils/BoutiqueProducts";
 
 interface ProductCardMobileProps {
   product: Product;
