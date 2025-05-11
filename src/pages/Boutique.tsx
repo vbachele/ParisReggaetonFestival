@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import WeezeventSection from "@/components/boutique/WeezeventSection";
 import { Layout } from "@/components/Layout";
 import BoutiqueVideo from "@/components/boutique/BoutiqueVideo";
+import { motion } from "framer-motion";
 
 export default function Boutique() {
 
@@ -40,9 +41,14 @@ export default function Boutique() {
         </div>
         <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
           <div className="container mx-auto">
-            <h1 className="text-4xl md:text-5xl font-bold mb-8 font-title">
+            <motion.h1
+              className="text-4xl md:text-5xl font-bold mb-8 font-title"
+              initial={{ x: -100, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.8, ease: 'easeOut' }}
+            >
               La boutique
-            </h1>
+            </motion.h1>
           </div>
         </div>
       </div>
