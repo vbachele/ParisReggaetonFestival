@@ -33,7 +33,7 @@ export default function Boutique() {
           <BoutiqueVideo
             sources={[
               "/boutique/video_home.mp4",
-              "/boutique/video_tshirt_femme.mp4"
+              "/boutique/video_tshirt.mp4"
             ]}
             className="w-full h-[50vh] object-cover object-center"
           />
