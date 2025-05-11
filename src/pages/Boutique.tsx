@@ -2,18 +2,17 @@ import { BoutiqueCarousel } from "@/components/boutique/BoutiqueCarousel";
 import { useEffect } from "react";
 import WeezeventSection from "@/components/boutique/WeezeventSection";
 import { Layout } from "@/components/Layout";
+import BoutiqueVideo from "@/components/boutique/BoutiqueVideo";
 
 export default function Boutique() {
 
    useEffect(() => {
-    // Load Weezevent script
     const script = document.createElement('script');
     script.src = 'https://widget.weezevent.com/weez.js';
     script.async = true;
     document.body.appendChild(script);
 
     return () => {
-      // Cleanup script when component unmounts
       document.body.removeChild(script);
     };
   }, []);
@@ -30,12 +29,12 @@ export default function Boutique() {
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/50"></div>
         </div>
         <div className="md:hidden relative w-full pt-20 h-[50vh] overflow-hidden">
-          <video 
-            src="/boutique/video_home.mp4" 
+          <BoutiqueVideo
+            sources={[
+              "/boutique/video_home.mp4",
+              "/boutique/video_tshirt_femme.mp4"
+            ]}
             className="w-full h-[50vh] object-cover object-center"
-            autoPlay
-            muted
-            loop
           />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/50"></div>
         </div>

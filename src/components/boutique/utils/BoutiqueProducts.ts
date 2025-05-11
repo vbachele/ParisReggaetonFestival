@@ -52,7 +52,7 @@ export const products: Product[] = [
       XL: true,
       XXL: true
     },
-    color: ["#FFC0CB", "#8A2BE2", "#FF0000"]
+    color: ["#000000","#FFC0CB", "#8A2BE2", "#FF0000"]
   },
   {
     id: 3,
@@ -89,6 +89,6 @@ export const products: Product[] = [
       XL: false,
       XXL: false
     },
-    color: ["#000000", "#FFFF00", "#FFA500", "#FFC0CB", "#00FFFF"]
+    color: ["#000000", "#FFFF00", "#FFC0CB", "#00FFFF"]
   },
 ]; 

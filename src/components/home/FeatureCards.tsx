@@ -39,7 +39,7 @@ const featureCards: FeatureCard[] = [
     text: "Dernière place, ne manquez pas le plus grand événement de danse reggaeton jamais vu en France, réservé maintenant !",
     img: "/contact/rg_booster.jpg",
     imgAlt: "Places Limitées",
-    link: links.external.weezevent,
+    link: "/tickets",
     imgContainerClass: "w-full h-full rounded-lg shadow-lg object-cover"
   }
 ];
