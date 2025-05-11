@@ -18,7 +18,7 @@ const ProductSizes: React.FC<ProductSizesProps> = ({ sizes }) => {
     <div className="mt-2">
       <div className="flex items-center gap-2">
         <span className="text-sm font-body whitespace-nowrap font-semibold">
-          Tailles disponibles:
+          Tailles:
         </span>
         <div className="flex gap-2">
           {Object.entries(sizes).map(([size]) => (
