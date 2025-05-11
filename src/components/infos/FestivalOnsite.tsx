@@ -5,11 +5,11 @@ const FestivalOnsite = () => {
       
       <div className="space-y-6">
         <div>
-          <h3 className="text-xl font-semibold  mb-3">Pour faciliter l'accueil, l'équipe vous remercie :</h3>
+          <h3 className="text-xl font-semibold  mb-3">Pour faciliter l'accueil, l'équipe te remercie :</h3>
           <ul className="list-disc pl-6 space-y-2 font-body">
             <li>D'arriver 20 min en avance</li>
             <li>De prévoir une tenue confortable et des baskets propres</li>
-            <li>De présenter votre pass en version papier ou numérique à votre arrivée</li>
+            <li>De présenter ton pass en version papier ou numérique à ton arrivée</li>
           </ul>
         </div>
 

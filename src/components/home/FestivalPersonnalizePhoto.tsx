@@ -66,7 +66,7 @@ const FestivalPersonnalizePhoto = () => {
             href="https://www.twibbonize.com/prf2025jyserai" 
             className="inline-block bg-text-primary text-white text-2xl font-bold px-12 py-4 rounded-2xl transform hover:scale-105 transition-transform duration-200 shadow-lg hover:shadow-xl"
           >
-            CLIQUER ICI
+            CLIQUE ICI
           </a>
         </motion.div>
       </div>

@@ -6,7 +6,7 @@ const Accommodation = () => (
       <div>
         <h4 className="font-medium mb-2 font-title">À pied</h4>
         <p className="text-gray-600 font-body">
-          Si vous êtes à pied, nous vous recommandons de trouver un logement au sein de la ville si possible (type AirBnb et autres). À l'entrée de la ville, il y a également plusieurs hôtels.
+          Si tu es à pied, nous te recommandons de trouver un logement au sein de la ville si possible (type AirBnb et autres). À l'entrée de la ville, il y a également plusieurs hôtels.
         </p>
       </div>
     </div>
@@ -40,7 +40,7 @@ const Accommodation = () => (
         rel="noopener noreferrer"
         className={`inline-flex items-center text-text-primary hover:underline`}
       >
-        Planifier votre trajet RATP
+        Planifier ton trajet RATP
       </a>
     </div>
   </div>

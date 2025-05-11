@@ -18,7 +18,7 @@ const featureCards: FeatureCard[] = [
   {
     cardClass: "border-none relative overflow-hidden group rounded-xl bg-[#00b8c9]",
     title: "Ouvert à toutes et à tous",
-    text: "Trois jours de festival et plus de 15 heures de cours pour vivre une expérience unique en France, intense et 100% good vibe !",
+    text: "Trois jours de festival et plus de 15 heures de cours pour vivre une expérience unique en France, intense et 100% good vibes !",
     img: "/dancePhotos/cours_tous_niveaux.jpg",
     imgAlt: "Tous Niveaux",
     link: links.internal.planning,
@@ -26,19 +26,19 @@ const featureCards: FeatureCard[] = [
   },
   {
     cardClass: "border-none relative overflow-hidden group rounded-xl bg-text-primary",
-    title: "L'équipe de Choc",
-    text: "Les meilleurs professeurs internationaux pour partager leur passion, leur énergie et vous faire vivre une aventure incroyable !",
+    title: "L'équipe de choc",
+    text: "Les meilleurs professeurs internationaux pour partager leur passion, leur énergie et te faire vivre une aventure incroyable !",
     img: "/affiches/cover_profs.png",
-    imgAlt: "Équipe Qualifiée",
+    imgAlt: "Équipe qualifiée",
     link: links.internal.lineup,
     imgContainerClass: "w-full h-full rounded-lg shadow-lg object-fill"
   },
   {
     cardClass: "border-none relative overflow-hidden group rounded-xl bg-purple-800",
-    title: "Dernières Places !",
-    text: "Dernière place, ne manquez pas le plus grand événement de danse reggaeton jamais vu en France, réservé maintenant !",
+    title: "Dernières places !",
+    text: "Dernières places, ne manque pas le plus grand événement de danse reggaeton jamais vu en France, réserve maintenant !",
     img: "/contact/rg_booster.jpg",
-    imgAlt: "Places Limitées",
+    imgAlt: "Places limitées",
     link: "/tickets",
     imgContainerClass: "w-full h-full rounded-lg shadow-lg object-cover"
   }
@@ -64,22 +64,23 @@ const FeatureCards = () => {
                   <p className="text-white/90 text-md md:text-lg max-w-md font-body">
                     {card.text}
                   </p>
-                  <div className="space-y-2">
+                  <div className="space-y-2 ">
                     {card.link.startsWith('#') && (
                       <a 
                         href={card.link} 
-                        className="inline-flex items-center text-white hover:underline gap-2"
+                        className="inline-flex items-center text-white hover:underline gap-2 border-[0.5px] rounded-lg  px-1"
+                        
                       >
-                        <span className="text-shadow-outline border-[0.5px] rounded-lg p-2 border-white">Découvrir</span> <ArrowRight className="w-4 h-4" />
+                        <span className="text-shadow-outline flex-row rounded-lg p-2 border-white gap-2">Découvrir</span> <ArrowRight className="w-4 h-4 text-white" />
                       </a>
                     )} 
                     {!card.link.startsWith('#') && (
                       <Link 
                         to={card.link} 
-                        className="inline-flex items-center text-white hover:underline gap-2"
+                        className="inline-flex items-center text-white hover:underline gap-2 border-[0.5px] rounded-lg  px-1"
                       >
-                        <span className='text-shadow-outline border-[0.5px] rounded-lg p-2 border-white'>Découvrir</span> <ArrowRight className="w-4 h-4" />
-                      </Link>
+                        <span className="text-shadow-outline flex-row rounded-lg p-2 border-white gap-2">Découvrir</span> <ArrowRight className="w-4 h-4 text-white" />
+                        </Link>
                     )}
                   
                   </div>

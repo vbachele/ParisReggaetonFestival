@@ -47,7 +47,7 @@ const Tickets = () => {
                   BILLETTERIE
                 </p>
                 <p className="text-white text-sm md:text-lg text-center font-body">
-                  Choisissez votre journée ou prenez le FullPass pour profiter de tout le festival !
+                  Choisis ta journée ou prends le FullPass pour profiter de tout le festival !
                 </p>
               
               </CardHeader>
