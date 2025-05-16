@@ -5,7 +5,7 @@ interface BoutiqueVideoProps {
   className?: string;
 }
 
-const BoutiqueVideo: React.FC<BoutiqueVideoProps> = ({ sources, className }) => {
+const BoutiqueVideo = ({ sources, className }: BoutiqueVideoProps) => {
   const [currentVideo, setCurrentVideo] = useState(0);
   const videoRef = useRef<HTMLVideoElement>(null);
 
