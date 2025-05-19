@@ -18,7 +18,7 @@ export const products: Product[] = [
   {
     id: 1,
     name: "T-SHIRT FEMMES",
-    price: "29.99€",
+    price: "20 €",
     images: [
       "/boutique/tshirt_femme1.jpg",
       "/boutique/tshirt_femme2.jpg",
@@ -38,7 +38,7 @@ export const products: Product[] = [
   {
     id: 2,
     name: "DEBARDEUR FEMMES",
-    price: "24.99€",
+    price: "20 €",
     images: [
       "/boutique/debardeur1.jpg",
       "/boutique/debardeur2.jpg",
@@ -57,7 +57,7 @@ export const products: Product[] = [
   {
     id: 3,
     name: "TSHIRT MIXTES",
-    price: "19.99€",
+    price: "20 €",
     images: [
       "/boutique/tshirt-mixte1.jpg",
       "/boutique/tshirt-mixte2.jpg",
@@ -75,7 +75,7 @@ export const products: Product[] = [
   {
     id: 4,
     name: "TOTE BAG",
-    price: "15.99€",
+    price: "Offert avec tout autre achat",
     images: [
       "/boutique/tote-bag1.jpg",
       "/boutique/tote-bag2.jpg",

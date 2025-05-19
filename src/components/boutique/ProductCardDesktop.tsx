@@ -79,7 +79,7 @@ const ProductCardDesktop = ({ product }: ProductCardDesktopProps) => {
       </CardHeader>
       <CardContent className="flex flex-col justify-between h-full min-h-[220px] py-6 px-6 bg-white rounded-b-lg">
         <div>
-          <ProductTitlePrice name={product.name} price={product.price} />
+          <ProductTitlePrice name={product.name} price={product.price} id={product.id} />
           <ProductColors colors={product.color} />
           <ProductSizes sizes={product.sizes} />
         </div>

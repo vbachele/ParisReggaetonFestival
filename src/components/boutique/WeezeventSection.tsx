@@ -6,31 +6,20 @@ const WeezeventSection = () => {
     <div className="w-full mx-auto md:px-40 px-4 md:py-8 py-4" id="weezevent-section">
       <div className="bg-text-primary text-background-primary rounded-2xl px-6 py-6 mb-6 text-center ">
         <span className="block text-2xl md:text-3xl font-extrabold font-title tracking-wide mb-4">
-          BIENVENUE SUR LES PRÉ-VENTES DU PARIS REGGAETON FESTIVAL
+          BIENVENUE SUR LA BOUTIQUE DU PARIS REGGAETON FESTIVAL
         </span>
         <div className="flex flex-col gap-4 text-lg font-body text-center text-white whitespace-pre-line">
           
-          <div className="flex  font-semibold items-center flex-row justify-center gap-2">
-            <span className="flex items-center gap-2 justify-center">
-              Tu peux accéder à la boutique, en avant première, 24h avant tout le monde !
-            </span>
-          </div>
           <div className=" rounded-2xl px-2 md:px-8 py-4 max-w-4xl mx-auto">
             <ul className="flex flex-col gap-6 text-white text-left font-semibold text-sm md:text-base font-body">
               <li className="flex items-start gap-4">
                 <Shirt className="w-7 h-7 text-yellow-300 twe flex-shrink-0 mt-1" />
                 <span>
-                  Ici, tu peux nous montrer tes articles, tailles et styles préférés : t-shirts (que tu peux choisir de porter en mode crop-top), débardeurs, tote-bags… tout y est ! Le + dur sera de choisir ;-)
+                  UN T-SHIRT ou UN DÉBARDEUR acheté == Le TOTE-BAG en offer !
                 </span>
               </li>
               <li className="flex items-start text-sm md:text-base gap-4">
                 <Ruler className="w-7 h-7 text-yellow-300 flex-shrink-0 mt-1" />
-                <span>
-                  Tu veux plusieurs tailles d'un même modèle ? Pense à les sélectionner séparément.
-                </span>
-              </li>
-              <li className="flex items-start text-sm md:text-base gap-4">
-                <ArrowBigUp className="w-7 h-7 text-yellow-300 flex-shrink-0 mt-1" />
                 <span>
                   Si tu hésites entre 2 tailles, prends la + grande.
                 </span>
@@ -39,9 +28,7 @@ const WeezeventSection = () => {
           </div>
           
           <div className="bg-[#fff7e6] text-[#a16207] rounded-xl px-4 py-4 text-center max-w-4xl mx-auto">
-            <span className="font-bold">Attention : ce n'est pas encore un achat définitif.</span>
-            <br />
-            <span>Seule la commande lors de l'ouverture officielle de la boutique validera ton article.</span>
+            <span className="font-bold">Les articles sont à récupérer lors de l'événement ! Il n'y a pas de livraison.</span>
           </div>
         
           <div className="flex flex-col items-center justify-center">
