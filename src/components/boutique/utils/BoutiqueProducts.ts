@@ -66,8 +66,11 @@ export const products: Product[] = [
     name: "TSHIRT MIXTES",
     price: "20 €",
     images: [
-      "/boutique/tshirt-mixte1.jpg",
-      "/boutique/tshirt-mixte2.jpg",
+      "/boutique/mixtes/mixtes1.jpg",
+      "/boutique/mixtes/mixtes2.jpg",
+      "/boutique/mixtes/mixtes3.jpg",
+      "/boutique/mixtes/mixtes4.jpg",
+      "/boutique/mixtes/mixtes5.jpg",
     ],
     description: "Poster collector avec la line-up complète du festival",
     sizes: {
