@@ -1,5 +1,5 @@
 import { links } from "@/config/links";
-import { Instagram, CheckCircle, Sparkles, Lock, CheckCheck, Shirt, Ruler, ArrowBigUp } from "lucide-react";
+import { Instagram, Shirt, Ruler, Euro } from "lucide-react";
 
 const WeezeventSection = () => {
   return (
@@ -15,7 +15,13 @@ const WeezeventSection = () => {
               <li className="flex items-start gap-4">
                 <Shirt className="w-7 h-7 text-yellow-300 twe flex-shrink-0 mt-1" />
                 <span>
-                  UN T-SHIRT ou UN DÉBARDEUR acheté == Le TOTE-BAG en offer !
+                  UN T-SHIRT ou UN DÉBARDEUR acheté = Le TOTE-BAG en offert !
+                </span>
+              </li>
+              <li className="flex items-start gap-4">
+                <Euro className="w-7 h-7 text-yellow-300 twe flex-shrink-0 mt-1" />
+                <span>
+                  Tarif de lancement jusqu'au 25 mai !
                 </span>
               </li>
               <li className="flex items-start text-sm md:text-base gap-4">
@@ -28,7 +34,7 @@ const WeezeventSection = () => {
           </div>
           
           <div className="bg-[#fff7e6] text-[#a16207] rounded-xl px-4 py-4 text-center max-w-4xl mx-auto">
-            <span className="font-bold">Les articles sont à récupérer lors de l'événement ! Il n'y a pas de livraison.</span>
+            <span className="font-bold">Les articles sont à récupérer lors de l'événement !</span>
           </div>
         
           <div className="flex flex-col items-center justify-center">
