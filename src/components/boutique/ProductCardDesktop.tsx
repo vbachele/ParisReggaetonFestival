@@ -62,7 +62,7 @@ const ProductCardDesktop = ({ product }: ProductCardDesktopProps) => {
           <img
             src={product.images[currentImageIndex]}
             alt={`${product.name} - Vue ${currentImageIndex + 1}`}
-            className="object-cover w-full h-full transition-transform duration-300 bg-white"
+            className="object-cover w-full h-full transition-transform duration-300 bg-white/50"
           />
         
           <div className="absolute top-2 left-0 right-0 px-2 md:px-4">

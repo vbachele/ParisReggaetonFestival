@@ -15,7 +15,7 @@ const WeezeventSection = () => {
               <li className="flex items-start gap-4">
                 <Shirt className="w-7 h-7 text-yellow-300 twe flex-shrink-0 mt-1" />
                 <span>
-                  UN T-SHIRT ou UN DÉBARDEUR acheté = Le TOTE-BAG en offert !
+                  UN T-SHIRT ou UN DÉBARDEUR acheté = Le TOTE-BAG offert !
                 </span>
               </li>
               <li className="flex items-start gap-4">
