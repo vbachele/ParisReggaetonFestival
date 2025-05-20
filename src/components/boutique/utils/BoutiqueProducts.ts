@@ -49,6 +49,7 @@ export const products: Product[] = [
       "/boutique/debardeur/debardeur7.jpg",
       "/boutique/debardeur/debardeur11.jpg",
       "/boutique/debardeur/debardeur9.jpg",
+      "/boutique/debardeur/debardeur13.jpg",
     ],
     description: "Bucket hat stylé aux couleurs du festival",
     sizes: {
@@ -69,7 +70,6 @@ export const products: Product[] = [
       "/boutique/mixtes/mixtes2.jpg",
       "/boutique/mixtes/mixtes3.jpg",
       "/boutique/mixtes/mixtes4.jpg",
-      "/boutique/mixtes/mixtes5.jpg",
     ],
     description: "Poster collector avec la line-up complète du festival",
     sizes: {
