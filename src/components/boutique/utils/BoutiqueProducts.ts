@@ -24,7 +24,6 @@ export const products: Product[] = [
       "/boutique/tshirt/tshirt_femme2.jpg",
       "/boutique/tshirt/tshirt_femme3.jpg",
       "/boutique/tshirt/tshirt_femme4.jpg",
-      "/boutique/tshirt/tshirt_femme5.jpg",
       "/boutique/tshirt/tshirt_femme6.jpg",
       "/boutique/tshirt/tshirt_femme7.jpg",
       "/boutique/tshirt/tshirt_femme8.jpg",
