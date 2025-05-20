@@ -79,7 +79,7 @@ export const products: Product[] = [
       XL: false,
       XXL: true
     },
-    color: [ "#FF0000", "#000000", "#FFD600"]
+    color: [ "#FF0000", "#000000", "#FFD600", "#8A2BE2"]
   },
   {
     id: 4,
