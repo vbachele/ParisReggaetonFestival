@@ -25,7 +25,7 @@ export const DesktopHeader = () => {
         <Link to="/contact" className={`px-4 py-2 rounded-lg transition-all ${isActive('/contact') ? 'text-white font-bold' : 'text-white font-semibold hover:text-[#9964FF]'}`}>Contact</Link>
         <Link 
           to={links.internal.tickets} 
-          className="ml-4 mr-2 px-4 py-1.5 bg-white text-text-primary font-bold rounded-lg hover:bg-amber-300 transition-colors"
+          className="ml-4 mr-2 px-4 py-1.5 bg-white text-text-primary font-bold rounded-lg hover:bg-amber-300 hover:scale-105 transition-all duration-300"
         >
           Billetterie
         </Link>

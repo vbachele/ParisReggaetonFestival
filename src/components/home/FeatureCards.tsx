@@ -68,7 +68,7 @@ const FeatureCards = () => {
                     {card.link.startsWith('#') && (
                       <a 
                         href={card.link} 
-                        className="inline-flex items-center text-white hover:underline gap-2 border-[0.5px] rounded-lg  px-1"
+                        className="inline-flex items-center text-white hover:underline gap-2 border-[0.5px] rounded-lg px-2 hover:scale-105 transition-all duration-300"
                         
                       >
                         <span className="text-shadow-outline flex-row rounded-lg p-2 border-white gap-2">Découvrir</span> <ArrowRight className="w-4 h-4 text-white" />
@@ -77,7 +77,7 @@ const FeatureCards = () => {
                     {!card.link.startsWith('#') && (
                       <Link 
                         to={card.link} 
-                        className="inline-flex items-center text-white hover:underline gap-2 border-[0.5px] rounded-lg  px-1"
+                        className="inline-flex items-center text-white hover:underline gap-2 border-[0.5px] rounded-lg px-2 hover:scale-105 transition-all duration-300"
                       >
                         <span className="text-shadow-outline flex-row rounded-lg p-2 border-white gap-2">Découvrir</span> <ArrowRight className="w-4 h-4 text-white" />
                         </Link>

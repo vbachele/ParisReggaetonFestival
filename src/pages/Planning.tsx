@@ -38,9 +38,9 @@ export const Planning = () => {
                   <button
                     key={day.id}
                     onClick={() => setActiveDay(day.id)}
-                    className={`px-6 py-3 rounded-lg text-sm font-medium transition-all ${
+                    className={`px-6 py-3 rounded-lg text-sm font-medium transition-all hover:scale-110 duration-300 ${
                       activeDay === day.id ? `text-white bg-text-primary`
-                        : 'text-black hover:bg-white/50'
+                        : 'text-black'
                     }`}
                   >
                     {day.label}

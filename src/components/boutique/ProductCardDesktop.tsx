@@ -86,7 +86,7 @@ const ProductCardDesktop = ({ product }: ProductCardDesktopProps) => {
         <div>
           <Button
             asChild
-            className="w-full mt-2 bg-text-primary text-white"
+            className="w-full mt-2 bg-text-primary text-white hover:scale-105 transition-all duration-300"
             size="lg"
           >
             <a href="#weezevent-section">Ajouter au panier</a>

@@ -9,6 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet" />
   <title>Paris Reggaeton Festival</title>
+  <meta name="description" content="PARIS REGGAETON FESTIVAL *** Un évènement Unique en France *** Du vendredi 30 mai au dimanche 1er Juin 2025. Un week-end 100% REGGAETON." />
 
   <!-- ✅ Structured Data -->
   <script type="application/ld+json">
@@ -44,13 +45,24 @@
       "@type": "Product",
       "name": "Pass – Paris Reggaeton Festival 2025",
       "mainEntityOfPage": "https://www.parisreggaetonfestival.com/tickets",
+      "image": "https://www.parisreggaetonfestival.com/cover_Reggaeton_Festival.png",
+      "description": "Pass week-end pour le Paris Reggaeton Festival 2025. Accès complet au festival du vendredi 30 mai au dimanche 1er juin.",
+      "brand": {
+        "@type": "Organization",
+        "name": "Paris Reggaeton Festival"
+      },
       "offers": {
         "@type": "Offer",
         "url": "https://www.parisreggaetonfestival.com/tickets",
         "price": "30.00",
         "priceCurrency": "EUR",
         "availability": "https://schema.org/InStock",
-        "validFrom": "2024-05-01"
+        "validFrom": "2024-05-01",
+        "priceValidUntil": "2025-06-01",
+        "seller": {
+          "@type": "Organization",
+          "name": "Paris Reggaeton Festival"
+        }
       }
     }
     </script>
@@ -71,13 +83,41 @@
           "@context": "https://schema.org",
           "@type": "Store",
           "name": "Boutique – Paris Reggaeton Festival",
-          "image": "https://www.parisreggaetonfestival.com/boutique/tshirt/tshirt_femme6.jpg",
+          "image": [
+            "https://www.parisreggaetonfestival.com/boutique/tshirt/tshirt_femme6.jpg",
+            "https://www.parisreggaetonfestival.com/cover_Reggaeton_Festival.png"
+          ],
           "url": "https://www.parisreggaetonfestival.com/boutique",
           "mainEntityOfPage": "https://www.parisreggaetonfestival.com/boutique",
-          "description": "Boutique officielle du Paris Reggaeton Festival 2025 : t-shirts, casquettes, affiches et plus encore.",
+          "description": "Boutique officielle du Paris Reggaeton Festival 2025. Découvrez notre collection exclusive : t-shirts, débardeurs et tote-bag aux couleurs du festival.",
           "address": {
             "@type": "PostalAddress",
             "addressCountry": "FR"
+          },
+          "offers": {
+            "@type": "Offer",
+            "priceCurrency": "EUR",
+            "price": "20.00",
+            "availability": "https://schema.org/InStock",
+            "availabilityStarts": "2025-05-20",
+            "availabilityEnds": "2025-06-01",
+            "url": "https://www.parisreggaetonfestival.com/boutique",
+            "seller": {
+              "@type": "Organization",
+              "name": "Paris Reggaeton Festival"
+            },
+            "deliveryMethod": "https://schema.org/OnSitePickup",
+            "areaServed": {
+              "@type": "Place",
+              "name": "Paris Reggaeton Festival Venue",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "5 rue Sainte-Geneviève",
+                "addressLocality": "Rungis",
+                "postalCode": "94150",
+                "addressCountry": "FR"
+              }
+            }
           }
         }
         </script>
